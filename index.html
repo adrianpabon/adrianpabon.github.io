@@ -7,6 +7,23 @@
       name="description"
       content="Simple portfolio of Adrián Pabón Mendoza with quick links to key sections."
     />
+    <link rel="canonical" href="https://adrianpabon.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Adrián Pabón Mendoza | Portfolio" />
+    <meta
+      property="og:description"
+      content="Applied AI and computer vision engineer. Projects, research, and contact info."
+    />
+    <meta property="og:url" content="https://adrianpabon.github.io/" />
+    <meta property="og:image" content="https://adrianpabon.github.io/data/profile.jpeg" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adrián Pabón Mendoza | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Applied AI and computer vision engineer. Projects, research, and contact info."
+    />
+    <meta name="twitter:image" content="https://adrianpabon.github.io/data/profile.jpeg" />
 
     <title>Adrián Pabón Mendoza | Portfolio</title>
 
@@ -30,47 +47,111 @@
         <p class="intro__tagline">
           Electronic engineer. Applied AI, computer vision, and language models.
         </p>
-        <nav class="intro__nav" aria-label="Primary navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#projects">Projects</a>
-          <a href="#research">Research</a>
-          <a href="#interests">Interests</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="intro__bio">
+          
+        </div>
+        <div class="intro__nav-wrap">
+          <button
+            class="nav-toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span class="nav-toggle__bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+          <nav
+            class="intro__nav"
+            id="primary-nav"
+            aria-label="Primary navigation"
+            data-nav
+          >
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </section>
 
       <section id="about" class="section">
         <h2>About Me</h2>
-        <p>
-          I am an electronic engineer focused on building AI products that stay simple and
-          maintainable. I work with computer vision, LLMs, and cloud deployments to solve
-          concrete problems.
+        
+          <p>
+            👋 Hey! I am Adrian Pabon, a 24-year-old electronic engineer from Barranquilla, Colombia. Passionate about AI, tech,
+            SaaS, and robotics. I am currently working on AI projects including computer vision.
+          </p>
+          <p>
+            I like to build things that help society improve and solve issues. I enjoy challenges,
+            play the piano, love 3D printing, and I am a dog lover (hi, Luka).
+        
         </p>
       </section>
 
       <section id="projects" class="section">
         <h2>Projects</h2>
-        <ul class="list">
-          <li>
+        <article class="project-card">
+          <div class="project-media">
+            <div class="slider" data-slider>
+              <div class="slider__track" data-slider-track>
+                <figure class="slide is-active">
+                  <img
+                    src="data/naia/naia_home.png"
+                    alt="NAIA assistant interface mock"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="data/naia/naia_research.png"
+                    alt="Dashboard analytics for NAIA usage"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80"
+                    alt="System architecture sketch for NAIA"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </div>
+              <div class="slider__controls">
+                <button class="slider__btn" type="button" data-slider-prev aria-label="Previous image">‹</button>
+                <button class="slider__btn" type="button" data-slider-next aria-label="Next image">›</button>
+              </div>
+              <div class="slider__dots" data-slider-dots aria-label="Slider pagination"></div>
+            </div>
+          </div>
+          <div class="project-content">
             <p class="list__title">NAIA</p>
             <p class="list__desc">
-              Virtual assistant for students that combines LLMs, RAG, and cloud orchestration
-              to answer academic and administrative questions.
+              3D virtual assistant for students that combines LLMs, RAG, and cloud orchestration.
+              It was built to help students and adminitration staff from Universidad del Norte in Colombia with their academic research and administrative tasks.
             </p>
             <p class="list__meta">
               LLMs · RAG · Redis · Azure ·
               <a
                 class="link"
-                href="https://www.youtube.com/playlist?list="
+                href="https://youtu.be/nrsWbBu5A1o"
                 target="_blank"
                 rel="noreferrer"
               >
-                Watch videos
+                Watch Demo
               </a>
             </p>
-          </li>
-        </ul>
+          </div>
+        </article>
       </section>
 
       <section id="research" class="section">
@@ -120,14 +201,41 @@
       </section>
 
       <section id="interests" class="section">
-        <h2>Interests</h2>
-        <ul class="pill-list" aria-label="Topics of interest">
-          <li>LLMs and RAG</li>
-          <li>Computer Vision</li>
-          <li>Production AI products</li>
-          <li>Robotic</li>
-          <li>Cloud automation</li>
-        </ul>
+        <h2>Interests & Skills</h2>
+        <div class="pill-group" aria-label="Hard skills">
+          <p class="pill-heading">Hard skills</p>
+          <ul class="pill-list">
+            <li>Python</li>
+            <li>Databricks</li>
+            <li>Redis</li>
+            <li>LLMs</li>
+            <li>RAG</li>
+            <li>Machine Learning</li>
+            <li>PyTorch</li>
+            <li>FastAPI</li>
+            <li>OpenAI API</li>
+            <li>LangChain</li>
+            <li>n8n</li>
+            <li>ElevenLabs</li>
+            <li>Docker</li>
+            <li>SQL / NoSQL</li>
+            <li>Supabase</li>
+            <li>AWS</li>
+            <li>OCI</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+        <div class="pill-group" aria-label="Soft skills">
+          <p class="pill-heading">Soft skills</p>
+          <ul class="pill-list">
+            <li>Problem solving</li>
+            <li>Clear communication</li>
+            <li>Technical writing</li>
+            <li>Team collaboration</li>
+            <li>Ownership</li>
+            <li>Fast prototyping</li>
+          </ul>
+        </div>
       </section>
 
       <section id="contact" class="section">
@@ -162,12 +270,39 @@
               github.com/adrianpabon
             </a>
           </div>
+          <div class="contact__row">
+            <span class="contact__label">CV</span>
+            <a
+              class="contact__value link"
+              href="data/Adrian_Pabon_CV.pdf"
+              download
+            >
+              Download
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <p>© <span data-year></span> Adrián Pabón Mendoza</p>
+      <p class="footer__updated">Last updated: December 2025</p>
     </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Adrián Pabón Mendoza",
+        "jobTitle": "Electronic Engineer · Applied AI",
+        "url": "https://adrianpabon.github.io/",
+        "image": "https://adrianpabon.github.io/data/profile.jpeg",
+        "sameAs": [
+          "https://www.linkedin.com/in/adrianpabonmendoza/",
+          "https://github.com/adrianpabon",
+          "https://scholar.google.com/citations?user=94yZN2IAAAAJ&hl=es&oi=ao"
+        ]
+      }
+    </script>
   </body>
 </html>
