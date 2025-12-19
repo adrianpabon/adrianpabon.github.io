@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portafolio de Adrián Pabón: proyectos, experiencia y contacto."
+    />
+
+    <title>Adrián Pabón | Portafolio</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      (() => {
+        const saved = localStorage.getItem("theme");
+        const systemDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+        const theme = saved ?? (systemDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#inicio" aria-label="Inicio">
+          <span class="logo__mark">AP</span>
+          <span class="logo__text">Adrián Pabón</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="button button--ghost" type="button" data-theme-toggle>
+          Tema
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow">Portafolio</p>
+            <h1>
+              Desarrollo productos web con foco en
+              <span class="gradient">experiencia y performance</span>.
+            </h1>
+            <p class="lead">
+              Aquí encontrarás una selección de proyectos, tecnologías y
+              canales de contacto.
+            </p>
+
+            <div class="cta">
+              <a class="button" href="#proyectos">Ver proyectos</a>
+              <a class="button button--secondary" href="#contacto">Contactar</a>
+            </div>
+
+            <ul class="chips" aria-label="Tecnologías">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </div>
+
+          <div class="hero__card" aria-label="Resumen">
+            <div class="card">
+              <h2 class="card__title">Highlights</h2>
+              <ul class="card__list">
+                <li>Proyectos end-to-end</li>
+                <li>UI accesible</li>
+                <li>Buenas prácticas</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button button--ghost" href="#contacto">Email</a>
+                <a
+                  class="button button--ghost"
+                  href="https://github.com/adrianpabon"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="section">
+        <div class="container">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy <strong>Adrián Pabón</strong>. Me interesa construir productos
+            web con buen diseño, rendimiento y mantenibilidad. Este sitio es
+            100% estático para desplegarse en GitHub Pages.
+          </p>
+          <p class="muted">
+            Edita esta sección en <code>index.html</code> para poner tu bio,
+            stack y experiencia.
+          </p>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <h2>Proyectos</h2>
+            <p class="muted">Reemplaza los placeholders con tus links reales.</p>
+          </div>
+
+          <div class="grid">
+            <article class="project card">
+              <h3 class="project__title">Proyecto 1</h3>
+              <p class="project__desc">
+                Descripción corta del problema, tu rol y el resultado.
+              </p>
+              <div class="project__meta">
+                <span class="tag">Frontend</span>
+                <span class="tag">API</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" aria-label="Demo de Proyecto 1">Demo</a>
+                <a class="link" href="#" aria-label="Código de Proyecto 1">Código</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <h3 class="project__title">Proyecto 2</h3>
+              <p class="project__desc">
+                Qué hiciste, qué aprendiste y qué impacto tuvo.
+              </p>
+              <div class="project__meta">
+                <span class="tag">Full‑stack</span>
+                <span class="tag">Auth</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" aria-label="Demo de Proyecto 2">Demo</a>
+                <a class="link" href="#" aria-label="Código de Proyecto 2">Código</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <h3 class="project__title">Proyecto 3</h3>
+              <p class="project__desc">
+                Un caso para mostrar UI, performance o arquitectura.
+              </p>
+              <div class="project__meta">
+                <span class="tag">UI</span>
+                <span class="tag">Performance</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" aria-label="Demo de Proyecto 3">Demo</a>
+                <a class="link" href="#" aria-label="Código de Proyecto 3">Código</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container">
+          <h2>Contacto</h2>
+          <p class="muted">
+            Deja tu correo y enlaces. El botón de copiar usa JavaScript.
+          </p>
+
+          <div class="contact card">
+            <div class="contact__row">
+              <span class="contact__label">Email</span>
+              <span class="contact__value" data-email>tuemail@ejemplo.com</span>
+              <button class="button button--secondary" type="button" data-copy-email>
+                Copiar
+              </button>
+            </div>
+
+            <div class="contact__row">
+              <span class="contact__label">LinkedIn</span>
+              <a class="contact__value link" href="#" target="_blank" rel="noreferrer">
+                linkedin.com/in/tuusuario
+              </a>
+            </div>
+
+            <div class="contact__row">
+              <span class="contact__label">GitHub</span>
+              <a
+                class="contact__value link"
+                href="https://github.com/adrianpabon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github.com/adrianpabon
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span data-year></span> Adrián Pabón</p>
+        <a class="link" href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+  </body>
+</html>
