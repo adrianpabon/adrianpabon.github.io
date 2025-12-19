@@ -278,6 +278,32 @@ h3 {
   padding: 1.15rem;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.profile__name {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.profile__role {
+  margin: 0.25rem 0 0;
+}
+
 .card__title {
   margin: 0 0 0.65rem;
   font-size: 1.05rem;
@@ -320,6 +346,10 @@ h3 {
 .grid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.grid--two {
   grid-template-columns: 1fr;
 }
 
@@ -367,6 +397,80 @@ h3 {
 
 .contact {
   padding: 1.15rem;
+}
+
+.facts {
+  padding: 1.15rem;
+}
+
+.facts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.facts__list li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+}
+
+.facts__list li:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.facts__list span:first-child {
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.item {
+  padding: 1.15rem;
+}
+
+.item__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.item__title {
+  margin: 0;
+}
+
+.item__subtitle {
+  margin: 0.2rem 0 0;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.bullets li + li {
+  margin-top: 0.4rem;
+}
+
+.pub {
+  padding: 1.15rem;
+}
+
+.pub__title {
+  margin: 0 0 0.25rem;
 }
 
 .contact__row {
@@ -418,6 +522,10 @@ h3 {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--two {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact__row {

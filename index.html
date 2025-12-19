@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portafolio de Adrián Pabón: proyectos, experiencia y contacto."
+      content="Adrián Pabón Mendoza: applied AI, Computer Vision, LLMs (RAG/fine-tuning), publications, and contact."
     />
 
-    <title>Adrián Pabón | Portafolio</title>
+    <title>Adrián Pabón Mendoza | Portfolio</title>
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -24,65 +24,84 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#content">Skip to content</a>
 
     <header class="header">
       <div class="container header__inner">
-        <a class="logo" href="#inicio" aria-label="Inicio">
+        <a class="logo" href="#home" aria-label="Home">
           <span class="logo__mark">AP</span>
-          <span class="logo__text">Adrián Pabón</span>
+          <span class="logo__text">Adrián Pabón Mendoza</span>
         </a>
 
-        <nav class="nav" aria-label="Navegación principal">
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <button class="button button--ghost" type="button" data-theme-toggle>
-          Tema
+          Theme
         </button>
       </div>
     </header>
 
-    <main id="contenido">
-      <section id="inicio" class="hero">
+    <main id="content">
+      <section id="home" class="hero">
         <div class="container hero__inner">
           <div class="hero__copy">
-            <p class="eyebrow">Portafolio</p>
+            <p class="eyebrow">Portfolio</p>
             <h1>
-              Desarrollo productos web con foco en
-              <span class="gradient">experiencia y performance</span>.
+              I build
+              <span class="gradient">applied AI</span> solutions for real-world problems.
             </h1>
             <p class="lead">
-              Aquí encontrarás una selección de proyectos, tecnologías y
-              canales de contacto.
+              Electronic Engineer (Cum Laude) with experience in Computer Vision,
+              LLMs (RAG / fine-tuning), and cloud deployments (AWS, Oracle, Azure).
             </p>
 
             <div class="cta">
-              <a class="button" href="#proyectos">Ver proyectos</a>
-              <a class="button button--secondary" href="#contacto">Contactar</a>
+              <a class="button" href="#projects">View projects</a>
+              <a class="button button--secondary" href="ADRIAN%20PABON%20CV.pdf" download>
+                Download CV
+              </a>
             </div>
 
-            <ul class="chips" aria-label="Tecnologías">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>React</li>
-              <li>Node</li>
+            <ul class="chips" aria-label="Technologies">
+              <li>Python</li>
+              <li>Computer Vision</li>
+              <li>LLMs</li>
+              <li>RAG</li>
+              <li>AWS</li>
+              <li>Docker</li>
             </ul>
           </div>
 
-          <div class="hero__card" aria-label="Resumen">
+          <div class="hero__card" aria-label="Quick summary">
             <div class="card">
+              <div class="profile">
+                <img
+                  class="avatar"
+                  src="profile.jpeg"
+                  alt="Adrián Pabón Mendoza"
+                  width="128"
+                  height="128"
+                  loading="eager"
+                  decoding="async"
+                />
+                <div class="profile__meta">
+                  <p class="profile__name">Adrián Pabón Mendoza</p>
+                  <p class="muted profile__role">AI Product · Research · Barranquilla, CO</p>
+                </div>
+              </div>
               <h2 class="card__title">Highlights</h2>
               <ul class="card__list">
-                <li>Proyectos end-to-end</li>
-                <li>UI accesible</li>
-                <li>Buenas prácticas</li>
+                <li>Computer Vision for detection</li>
+                <li>LLM + RAG APIs (Python/SQL)</li>
+                <li>Cloud: AWS, Oracle, Azure</li>
               </ul>
               <div class="card__actions">
-                <a class="button button--ghost" href="#contacto">Email</a>
+                <a class="button button--ghost" href="#contact">Contact</a>
                 <a
                   class="button button--ghost"
                   href="https://github.com/adrianpabon"
@@ -97,97 +116,220 @@
         </div>
       </section>
 
-      <section id="sobre-mi" class="section">
+      <section id="about" class="section">
         <div class="container">
-          <h2>Sobre mí</h2>
+          <h2>About</h2>
           <p>
-            Soy <strong>Adrián Pabón</strong>. Me interesa construir productos
-            web con buen diseño, rendimiento y mantenibilidad. Este sitio es
-            100% estático para desplegarse en GitHub Pages.
+            I'm <strong>Adrián Pabón Mendoza</strong>, an electronic engineer and
+            researcher. I work on AI solutions that combine
+            <strong>Computer Vision</strong>, <strong>LLMs</strong>, and cloud
+            deployments to automate processes and improve operations.
           </p>
-          <p class="muted">
-            Edita esta sección en <code>index.html</code> para poner tu bio,
-            stack y experiencia.
-          </p>
+
+          <div class="facts card">
+            <ul class="facts__list">
+              <li><span>Location</span><span>Barranquilla, Atlántico (CO)</span></li>
+              <li>
+                <span>Email</span>
+                <a class="link" href="mailto:adrianpabonmendoza@gmail.com">adrianpabonmendoza@gmail.com</a>
+              </li>
+              <li>
+                <span>Phone</span>
+                <a class="link" href="tel:+573232257331">+57 323 225 7331</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/adrianpabonmendoza/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/adrianpabonmendoza
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="proyectos" class="section section--alt">
+      <section id="experience" class="section section--alt">
         <div class="container">
           <div class="section__header">
-            <h2>Proyectos</h2>
-            <p class="muted">Reemplaza los placeholders con tus links reales.</p>
+            <h2>Experience</h2>
+            <p class="muted">Recent roles in product and research.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="card item">
+              <div class="item__header">
+                <div>
+                  <h3 class="item__title">AI Product Specialist</h3>
+                  <p class="muted item__subtitle">Optimize IT SAS · Barranquilla, Colombia</p>
+                </div>
+                <p class="tag">Jul 2024 – Present</p>
+              </div>
+              <ul class="bullets">
+                <li>
+                  Improved shoplifting detection in micro-market systems using
+                  Computer Vision, reducing manual review time by ~80%.
+                </li>
+                <li>
+                  Built serverless automations on Oracle Cloud to streamline
+                  database backups, reducing manual maintenance and error rates.
+                </li>
+                <li>
+                  Designed and deployed APIs for language models and RAG systems
+                  using Python and SQL.
+                </li>
+                <li>
+                  Enhanced AI capabilities with embeddings, vector databases,
+                  and fine-tuning for better performance.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card item">
+              <div class="item__header">
+                <div>
+                  <h3 class="item__title">AI Researcher and Developer</h3>
+                  <p class="muted item__subtitle">Universidad del Norte · Barranquilla, Colombia</p>
+                </div>
+                <p class="tag">Jan 2024 – Nov 2025</p>
+              </div>
+              <ul class="bullets">
+                <li>
+                  Scaled NAIA (AI assistant) from a 500-user pilot to a production
+                  system serving 13,000+ students.
+                </li>
+                <li>
+                  Designed a modular monolithic architecture integrating LLMs,
+                  Redis for state management, and external services.
+                </li>
+                <li>
+                  Integrated Microsoft Graph API for secure access to email,
+                  calendar, and authentication services (Azure).
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2>Publications &amp; Research</h2>
+            <p class="muted">Recent papers and talks.</p>
+          </div>
+
+          <div class="grid grid--two">
+            <article class="card pub">
+              <h3 class="pub__title">NAIA: A Robust AI Framework for Academic Assistance</h3>
+              <p class="muted">Systems (2025)</p>
+            </article>
+            <article class="card pub">
+              <h3 class="pub__title">Architectures for AI‑Powered Virtual Assistants</h3>
+              <p class="muted">IEEE TEMSCON LATAM (2025)</p>
+            </article>
+            <article class="card pub">
+              <h3 class="pub__title">NAIA: A Multi‑Technology Virtual Assistant</h3>
+              <p class="muted">IEEE Access (2025)</p>
+            </article>
+            <article class="card pub">
+              <h3 class="pub__title">Itinerary Assignment Optimization</h3>
+              <p class="muted">IEEE COLCOM (2024)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <h2>Projects</h2>
+            <p class="muted">Projects that I have worked on.</p>
           </div>
 
           <div class="grid">
             <article class="project card">
-              <h3 class="project__title">Proyecto 1</h3>
+              <h3 class="project__title">NAIA </h3>
               <p class="project__desc">
-                Descripción corta del problema, tu rol y el resultado.
+                NAIA is a multi-technology virtual assistant that integrates LLMs, Redis for state management, and external services.
               </p>
               <div class="project__meta">
-                <span class="tag">Frontend</span>
-                <span class="tag">API</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Redis</span>
+                <span class="tag">External Services</span>
               </div>
               <div class="project__links">
-                <a class="link" href="#" aria-label="Demo de Proyecto 1">Demo</a>
-                <a class="link" href="#" aria-label="Código de Proyecto 1">Código</a>
+                <a class="link" href="#" aria-label="Project 1 demo">Demo</a>
+                <a class="link" href="#" aria-label="Project 1 source code">Code</a>
               </div>
             </article>
 
             <article class="project card">
-              <h3 class="project__title">Proyecto 2</h3>
+              <h3 class="project__title"> NAIA </h3>
               <p class="project__desc">
-                Qué hiciste, qué aprendiste y qué impacto tuvo.
+                NAIA is a multi-technology virtual assistant that integrates LLMs, Redis for state management, and external services.
               </p>
               <div class="project__meta">
-                <span class="tag">Full‑stack</span>
-                <span class="tag">Auth</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Redis</span>
+                <span class="tag">External Services</span>
               </div>
               <div class="project__links">
-                <a class="link" href="#" aria-label="Demo de Proyecto 2">Demo</a>
-                <a class="link" href="#" aria-label="Código de Proyecto 2">Código</a>
+                <a class="link" href="#" aria-label="Project 3 demo">Demo</a>
+                <a class="link" href="#" aria-label="Project 3 source code">Code</a>
               </div>
-            </article>
-
-            <article class="project card">
-              <h3 class="project__title">Proyecto 3</h3>
               <p class="project__desc">
-                Un caso para mostrar UI, performance o arquitectura.
+                A case study to showcase UI, performance, or architecture.
               </p>
               <div class="project__meta">
                 <span class="tag">UI</span>
                 <span class="tag">Performance</span>
               </div>
               <div class="project__links">
-                <a class="link" href="#" aria-label="Demo de Proyecto 3">Demo</a>
-                <a class="link" href="#" aria-label="Código de Proyecto 3">Código</a>
+                <a class="link" href="#" aria-label="Project 3 demo">Demo</a>
+                <a class="link" href="#" aria-label="Project 3 source code">Code</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contacto" class="section">
+      <section id="contact" class="section">
         <div class="container">
-          <h2>Contacto</h2>
+          <h2>Contact</h2>
           <p class="muted">
-            Deja tu correo y enlaces. El botón de copiar usa JavaScript.
+            Reach out by email or connect on LinkedIn.
           </p>
 
           <div class="contact card">
             <div class="contact__row">
               <span class="contact__label">Email</span>
-              <span class="contact__value" data-email>tuemail@ejemplo.com</span>
+              <span class="contact__value" data-email>adrianpabonmendoza@gmail.com</span>
               <button class="button button--secondary" type="button" data-copy-email>
-                Copiar
+                Copy
               </button>
             </div>
 
             <div class="contact__row">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+57 323 225 7331</span>
+            </div>
+
+            <div class="contact__row">
               <span class="contact__label">LinkedIn</span>
-              <a class="contact__value link" href="#" target="_blank" rel="noreferrer">
-                linkedin.com/in/tuusuario
+              <a
+                class="contact__value link"
+                href="https://www.linkedin.com/in/adrianpabonmendoza/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin.com/in/adrianpabonmendoza
               </a>
             </div>
 
@@ -202,6 +344,13 @@
                 github.com/adrianpabon
               </a>
             </div>
+
+            <div class="contact__row">
+              <span class="contact__label">CV</span>
+              <a class="contact__value link" href="ADRIAN%20PABON%20CV.pdf" download>
+                Download PDF
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -209,8 +358,8 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p class="muted">© <span data-year></span> Adrián Pabón</p>
-        <a class="link" href="#inicio">Volver arriba</a>
+        <p class="muted">© <span data-year></span> Adrián Pabón Mendoza</p>
+        <a class="link" href="#home">Back to top</a>
       </div>
     </footer>
   </body>

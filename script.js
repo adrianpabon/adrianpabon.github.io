@@ -17,7 +17,7 @@ function initThemeToggle() {
 
   const syncLabel = () => {
     const theme = getCurrentTheme();
-    button.textContent = theme === "dark" ? "Tema: oscuro" : "Tema: claro";
+    button.textContent = theme === "dark" ? "Theme: dark" : "Theme: light";
     button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
   };
 
@@ -48,7 +48,7 @@ function initCopyEmail() {
     try {
       await navigator.clipboard.writeText(email);
       const prev = copyButton.textContent;
-      copyButton.textContent = "Copiado";
+      copyButton.textContent = "Copied";
       copyButton.disabled = true;
       window.setTimeout(() => {
         copyButton.textContent = prev;
