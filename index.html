@@ -5,362 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Adrián Pabón Mendoza: applied AI, Computer Vision, LLMs (RAG/fine-tuning), publications, and contact."
+      content="Simple portfolio of Adrián Pabón Mendoza with quick links to key sections."
     />
 
     <title>Adrián Pabón Mendoza | Portfolio</title>
 
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="data/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-
-    <script>
-      (() => {
-        const saved = localStorage.getItem("theme");
-        const systemDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
-        const theme = saved ?? (systemDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme;
-      })();
-    </script>
     <script defer src="script.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
-
-    <header class="header">
-      <div class="container header__inner">
-        <a class="logo" href="#home" aria-label="Home">
-          <span class="logo__mark">AP</span>
-          <span class="logo__text">Adrián Pabón Mendoza</span>
-        </a>
-
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
+    <main class="layout" id="content">
+      <section id="home" class="intro" aria-label="Home">
+        <img
+          class="intro__photo"
+          src="data/profile.jpeg"
+          alt="Photo of Adrián Pabón Mendoza"
+          width="250"
+          height="250"
+          loading="eager"
+          decoding="async"
+        />
+        <h1 class="intro__name">Adrián Pabón Mendoza</h1>
+        <p class="intro__tagline">
+          Electronic engineer. Applied AI, computer vision, and language models.
+        </p>
+        <nav class="intro__nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
           <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#interests">Interests</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <button class="button button--ghost" type="button" data-theme-toggle>
-          Theme
-        </button>
-      </div>
-    </header>
-
-    <main id="content">
-      <section id="home" class="hero">
-        <div class="container hero__inner">
-          <div class="hero__copy">
-            <p class="eyebrow">Portfolio</p>
-            <h1>
-              I build
-              <span class="gradient">applied AI</span> solutions for real-world problems.
-            </h1>
-            <p class="lead">
-              Electronic Engineer (Cum Laude) with experience in Computer Vision,
-              LLMs (RAG / fine-tuning), and cloud deployments (AWS, Oracle, Azure).
-            </p>
-
-            <div class="cta">
-              <a class="button" href="#projects">View projects</a>
-              <a class="button button--secondary" href="ADRIAN%20PABON%20CV.pdf" download>
-                Download CV
-              </a>
-            </div>
-
-            <ul class="chips" aria-label="Technologies">
-              <li>Python</li>
-              <li>Computer Vision</li>
-              <li>LLMs</li>
-              <li>RAG</li>
-              <li>AWS</li>
-              <li>Docker</li>
-            </ul>
-          </div>
-
-          <div class="hero__card" aria-label="Quick summary">
-            <div class="card">
-              <div class="profile">
-                <img
-                  class="avatar"
-                  src="profile.jpeg"
-                  alt="Adrián Pabón Mendoza"
-                  width="128"
-                  height="128"
-                  loading="eager"
-                  decoding="async"
-                />
-                <div class="profile__meta">
-                  <p class="profile__name">Adrián Pabón Mendoza</p>
-                  <p class="muted profile__role">AI Product · Research · Barranquilla, CO</p>
-                </div>
-              </div>
-              <h2 class="card__title">Highlights</h2>
-              <ul class="card__list">
-                <li>Computer Vision for detection</li>
-                <li>LLM + RAG APIs (Python/SQL)</li>
-                <li>Cloud: AWS, Oracle, Azure</li>
-              </ul>
-              <div class="card__actions">
-                <a class="button button--ghost" href="#contact">Contact</a>
-                <a
-                  class="button button--ghost"
-                  href="https://github.com/adrianpabon"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container">
-          <h2>About</h2>
-          <p>
-            I'm <strong>Adrián Pabón Mendoza</strong>, an electronic engineer and
-            researcher. I work on AI solutions that combine
-            <strong>Computer Vision</strong>, <strong>LLMs</strong>, and cloud
-            deployments to automate processes and improve operations.
-          </p>
-
-          <div class="facts card">
-            <ul class="facts__list">
-              <li><span>Location</span><span>Barranquilla, Atlántico (CO)</span></li>
-              <li>
-                <span>Email</span>
-                <a class="link" href="mailto:adrianpabonmendoza@gmail.com">adrianpabonmendoza@gmail.com</a>
-              </li>
-              <li>
-                <span>Phone</span>
-                <a class="link" href="tel:+573232257331">+57 323 225 7331</a>
-              </li>
-              <li>
-                <span>LinkedIn</span>
-                <a
-                  class="link"
-                  href="https://www.linkedin.com/in/adrianpabonmendoza/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  linkedin.com/in/adrianpabonmendoza
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <h2>About Me</h2>
+        <p>
+          I am an electronic engineer focused on building AI products that stay simple and
+          maintainable. I work with computer vision, LLMs, and cloud deployments to solve
+          concrete problems.
+        </p>
       </section>
 
-      <section id="experience" class="section section--alt">
-        <div class="container">
-          <div class="section__header">
-            <h2>Experience</h2>
-            <p class="muted">Recent roles in product and research.</p>
-          </div>
-
-          <div class="timeline">
-            <article class="card item">
-              <div class="item__header">
-                <div>
-                  <h3 class="item__title">AI Product Specialist</h3>
-                  <p class="muted item__subtitle">Optimize IT SAS · Barranquilla, Colombia</p>
-                </div>
-                <p class="tag">Jul 2024 – Present</p>
-              </div>
-              <ul class="bullets">
-                <li>
-                  Improved shoplifting detection in micro-market systems using
-                  Computer Vision, reducing manual review time by ~80%.
-                </li>
-                <li>
-                  Built serverless automations on Oracle Cloud to streamline
-                  database backups, reducing manual maintenance and error rates.
-                </li>
-                <li>
-                  Designed and deployed APIs for language models and RAG systems
-                  using Python and SQL.
-                </li>
-                <li>
-                  Enhanced AI capabilities with embeddings, vector databases,
-                  and fine-tuning for better performance.
-                </li>
-              </ul>
-            </article>
-
-            <article class="card item">
-              <div class="item__header">
-                <div>
-                  <h3 class="item__title">AI Researcher and Developer</h3>
-                  <p class="muted item__subtitle">Universidad del Norte · Barranquilla, Colombia</p>
-                </div>
-                <p class="tag">Jan 2024 – Nov 2025</p>
-              </div>
-              <ul class="bullets">
-                <li>
-                  Scaled NAIA (AI assistant) from a 500-user pilot to a production
-                  system serving 13,000+ students.
-                </li>
-                <li>
-                  Designed a modular monolithic architecture integrating LLMs,
-                  Redis for state management, and external services.
-                </li>
-                <li>
-                  Integrated Microsoft Graph API for secure access to email,
-                  calendar, and authentication services (Azure).
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="list">
+          <li>
+            <p class="list__title">NAIA</p>
+            <p class="list__desc">
+              Virtual assistant for students that combines LLMs, RAG, and cloud orchestration
+              to answer academic and administrative questions.
+            </p>
+            <p class="list__meta">
+              LLMs · RAG · Redis · Azure ·
+              <a
+                class="link"
+                href="https://www.youtube.com/playlist?list="
+                target="_blank"
+                rel="noreferrer"
+              >
+                Watch videos
+              </a>
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section id="research" class="section">
-        <div class="container">
-          <div class="section__header">
-            <h2>Publications &amp; Research</h2>
-            <p class="muted">Recent papers and talks.</p>
-          </div>
-
-          <div class="grid grid--two">
-            <article class="card pub">
-              <h3 class="pub__title">NAIA: A Robust AI Framework for Academic Assistance</h3>
-              <p class="muted">Systems (2025)</p>
-            </article>
-            <article class="card pub">
-              <h3 class="pub__title">Architectures for AI‑Powered Virtual Assistants</h3>
-              <p class="muted">IEEE TEMSCON LATAM (2025)</p>
-            </article>
-            <article class="card pub">
-              <h3 class="pub__title">NAIA: A Multi‑Technology Virtual Assistant</h3>
-              <p class="muted">IEEE Access (2025)</p>
-            </article>
-            <article class="card pub">
-              <h3 class="pub__title">Itinerary Assignment Optimization</h3>
-              <p class="muted">IEEE COLCOM (2024)</p>
-            </article>
-          </div>
+        <h2>Research</h2>
+        <div class="list__actions">
+          <a
+            class="button button--ghost"
+            href="https://scholar.google.com/citations?user=94yZN2IAAAAJ&hl=es&oi=ao"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Scholar
+          </a>
         </div>
+        <ul class="list">
+          <li>
+            <p class="list__title">NAIA: A Robust AI Framework for Academic Assistance</p>
+            <p class="list__desc">Authors: <strong>Adrián Pabón Mendoza</strong>, Kenneth Barrios Quiroga, Samuel Solano Celis, Christian G. Quintero M.</p>
+            <p class="list__meta">
+              Systems (2025) ·
+              <a class="link" href="https://www.mdpi.com/2079-8954/13/12/1091" target="_blank" rel="noreferrer">
+                View paper
+              </a>
+            </p>
+          </li>
+          <li>
+            <p class="list__title">A Comparison of Different Architectures for AI-Powered Virtual Assistants</p>
+            <p class="list__desc">Authors: Kenneth Barrios Quiroga, <strong>Adrián Pabón Mendoza</strong>, Samuel Solano Celis, Christian G. Quintero M., César Viloria-Nuñez</p>
+            <p class="list__meta">
+              IEEE TEMSCON LATAM (2025) ·
+              <a class="link" href="https://ieeexplore-ieee-org.ezproxy.uninorte.edu.co/document/11238808" target="_blank" rel="noreferrer">
+                View paper
+              </a>
+            </p>
+          </li>
+          <li>
+            <p class="list__title">Looking for operational efficiency in itinerary assignment optimization: a comparison of different optimization approaches</p>
+            <p class="list__desc">Authors: <strong>Adrián Pabón Mendoza</strong>, José Oñate López, Christian G. Quintero M.</p>
+            <p class="list__meta">
+              IEEE COLCOM (2024) ·
+              <a class="link" href="https://ieeexplore.ieee.org/abstract/document/10720293/" target="_blank" rel="noreferrer">
+                View paper
+              </a>
+            </p>
+          </li>
+        </ul>
       </section>
 
-      <section id="projects" class="section section--alt">
-        <div class="container">
-          <div class="section__header">
-            <h2>Projects</h2>
-            <p class="muted">Projects that I have worked on.</p>
-          </div>
-
-          <div class="grid">
-            <article class="project card">
-              <h3 class="project__title">NAIA </h3>
-              <p class="project__desc">
-                NAIA is a multi-technology virtual assistant that integrates LLMs, Redis for state management, and external services.
-              </p>
-              <div class="project__meta">
-                <span class="tag">LLMs</span>
-                <span class="tag">RAG</span>
-                <span class="tag">Redis</span>
-                <span class="tag">External Services</span>
-              </div>
-              <div class="project__links">
-                <a class="link" href="#" aria-label="Project 1 demo">Demo</a>
-                <a class="link" href="#" aria-label="Project 1 source code">Code</a>
-              </div>
-            </article>
-
-            <article class="project card">
-              <h3 class="project__title"> NAIA </h3>
-              <p class="project__desc">
-                NAIA is a multi-technology virtual assistant that integrates LLMs, Redis for state management, and external services.
-              </p>
-              <div class="project__meta">
-                <span class="tag">LLMs</span>
-                <span class="tag">RAG</span>
-                <span class="tag">Redis</span>
-                <span class="tag">External Services</span>
-              </div>
-              <div class="project__links">
-                <a class="link" href="#" aria-label="Project 3 demo">Demo</a>
-                <a class="link" href="#" aria-label="Project 3 source code">Code</a>
-              </div>
-              <p class="project__desc">
-                A case study to showcase UI, performance, or architecture.
-              </p>
-              <div class="project__meta">
-                <span class="tag">UI</span>
-                <span class="tag">Performance</span>
-              </div>
-              <div class="project__links">
-                <a class="link" href="#" aria-label="Project 3 demo">Demo</a>
-                <a class="link" href="#" aria-label="Project 3 source code">Code</a>
-              </div>
-            </article>
-          </div>
-        </div>
+      <section id="interests" class="section">
+        <h2>Interests</h2>
+        <ul class="pill-list" aria-label="Topics of interest">
+          <li>LLMs and RAG</li>
+          <li>Computer Vision</li>
+          <li>Production AI products</li>
+          <li>Robotic</li>
+          <li>Cloud automation</li>
+        </ul>
       </section>
 
       <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact</h2>
-          <p class="muted">
-            Reach out by email or connect on LinkedIn.
-          </p>
-
-          <div class="contact card">
-            <div class="contact__row">
-              <span class="contact__label">Email</span>
-              <span class="contact__value" data-email>adrianpabonmendoza@gmail.com</span>
-              <button class="button button--secondary" type="button" data-copy-email>
-                Copy
-              </button>
-            </div>
-
-            <div class="contact__row">
-              <span class="contact__label">Phone</span>
-              <span class="contact__value">+57 323 225 7331</span>
-            </div>
-
-            <div class="contact__row">
-              <span class="contact__label">LinkedIn</span>
-              <a
-                class="contact__value link"
-                href="https://www.linkedin.com/in/adrianpabonmendoza/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                linkedin.com/in/adrianpabonmendoza
-              </a>
-            </div>
-
-            <div class="contact__row">
-              <span class="contact__label">GitHub</span>
-              <a
-                class="contact__value link"
-                href="https://github.com/adrianpabon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github.com/adrianpabon
-              </a>
-            </div>
-
-            <div class="contact__row">
-              <span class="contact__label">CV</span>
-              <a class="contact__value link" href="ADRIAN%20PABON%20CV.pdf" download>
-                Download PDF
-              </a>
-            </div>
+        <h2>Contact</h2>
+        <div class="contact-card">
+          <div class="contact__row">
+            <span class="contact__label">Email</span>
+            <span class="contact__value" data-email>adrianpabonmendoza@gmail.com</span>
+            <button class="button button--ghost" type="button" data-copy-email>
+              Copy
+            </button>
+          </div>
+          <div class="contact__row">
+            <span class="contact__label">LinkedIn</span>
+            <a
+              class="contact__value link"
+              href="https://www.linkedin.com/in/adrianpabonmendoza/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/adrianpabonmendoza
+            </a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__label">GitHub</span>
+            <a
+              class="contact__value link"
+              href="https://github.com/adrianpabon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/adrianpabon
+            </a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer__inner">
-        <p class="muted">© <span data-year></span> Adrián Pabón Mendoza</p>
-        <a class="link" href="#home">Back to top</a>
-      </div>
+      <p>© <span data-year></span> Adrián Pabón Mendoza</p>
     </footer>
   </body>
 </html>
