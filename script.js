@@ -1,35 +1,3 @@
-function setTheme(nextTheme) {
-  document.documentElement.dataset.theme = nextTheme;
-  try {
-    localStorage.setItem("theme", nextTheme);
-  } catch {
-    // ignore
-  }
-}
-
-function getCurrentTheme() {
-  return document.documentElement.dataset.theme || "dark";
-}
-
-function initThemeToggle() {
-  const button = document.querySelector("[data-theme-toggle]");
-  if (!button) return;
-
-  const syncLabel = () => {
-    const theme = getCurrentTheme();
-    button.textContent = theme === "dark" ? "Theme: dark" : "Theme: light";
-    button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-  };
-
-  button.addEventListener("click", () => {
-    const theme = getCurrentTheme();
-    setTheme(theme === "dark" ? "light" : "dark");
-    syncLabel();
-  });
-
-  syncLabel();
-}
-
 function initYear() {
   const year = document.querySelector("[data-year]");
   if (!year) return;
@@ -60,6 +28,5 @@ function initCopyEmail() {
   });
 }
 
-initThemeToggle();
 initYear();
 initCopyEmail();
