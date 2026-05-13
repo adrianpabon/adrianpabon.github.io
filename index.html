@@ -45,10 +45,11 @@
         />
         <h1 class="intro__name">Adrián Pabón Mendoza</h1>
         <p class="intro__tagline">
-          Electronic engineer. Applied AI, computer vision, and language models.
+          Senior Data and AI Engineer focused on production LLM/RAG and computer vision systems.
         </p>
         <div class="intro__bio">
-          
+          <p>Barranquilla, Colombia · Building applied AI products end-to-end.</p>
+          <p>Python · FastAPI · PyTorch · Redis · AWS · Azure · OCI</p>
         </div>
         <div class="intro__nav-wrap">
           <button
@@ -73,6 +74,7 @@
           >
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#research">Research</a>
             <a href="#interests">Interests & Skills</a>
@@ -83,16 +85,45 @@
 
       <section id="about" class="section">
         <h2>About Me</h2>
-        
-          <p>
-            👋 Hey! I am Adrian Pabon, a 24-year-old electronic engineer from Barranquilla, Colombia. Passionate about AI, tech,
-            SaaS, Startups, and robotics. I am currently working on AI projects including computer vision.
-          </p>
-          <p>
-            I like to build things that help society improve and solve issues. I enjoy challenges,
-            play the piano, love 3D printing, and I am a dog lover (hi, Luka 🐶).
-        
+        <p>
+          Hi! I am Adrian Pabon, an Electronics Engineer (Cum Laude) and AI Engineer from Barranquilla, Colombia.
+          I design and ship production AI systems with LLM/RAG and computer vision.
         </p>
+        <p>
+          I have worked across research and industry, from scaling AI assistants for 13,000+ users to deploying
+          computer vision pipelines that reduced manual camera review by 80%.
+        </p>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <ul class="list">
+          <li>
+            <p class="list__title">Senior Data and AI Engineer · Double V Partners</p>
+            <p class="list__desc">
+              Leading the migration of core banking procedures to GenAI-optimized microservices and event-driven
+              architectures. Designing serverless AWS solutions (Lambda, Step Functions, Bedrock) for secure,
+              scalable AI workflows.
+            </p>
+            <p class="list__meta">Remote, Colombia · Feb 2026 - Present</p>
+          </li>
+          <li>
+            <p class="list__title">AI Product Specialist / AI Engineer · Optimize IT SAS</p>
+            <p class="list__desc">
+              Improved theft detection with computer vision, reducing manual review by 80%. Delivered LLM/RAG APIs
+              with embeddings + vector search and automated OCI backup workflows with serverless functions.
+            </p>
+            <p class="list__meta">Barranquilla, Colombia · Jul 2024 - Feb 2026</p>
+          </li>
+          <li>
+            <p class="list__title">AI Researcher & Developer · Universidad del Norte</p>
+            <p class="list__desc">
+              Built and scaled NAIA to 13,000+ users. Integrated OpenAI LLMs, Redis state management,
+              Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.
+            </p>
+            <p class="list__meta">Barranquilla, Colombia · Jan 2024 - Nov 2025</p>
+          </li>
+        </ul>
       </section>
 
       <section id="projects" class="section">
@@ -136,11 +167,11 @@
           <div class="project-content">
             <p class="list__title">NAIA</p>
             <p class="list__desc">
-              3D virtual assistant for students that combines LLMs, RAG, and cloud orchestration.
-              It was built to help students and adminitration staff from Universidad del Norte in Colombia with their academic research and administrative tasks.
+              Multi-role assistant for Universidad del Norte that combines LLMs, RAG, Redis state, Azure services,
+              and Microsoft Graph integrations for academic and administrative workflows.
             </p>
             <p class="list__meta">
-              LLMs · RAG · Redis · Azure ·
+              2024-2025 · 13,000+ users · LLMs · RAG · Redis · Azure ·
               <a
                 class="link"
                 href="https://naia.uninorte.edu.co/"
@@ -161,6 +192,24 @@
             </p>
           </div>
         </article>
+        <ul class="list">
+          <li>
+            <p class="list__title">AI Agent Implementation for Medical Call Center</p>
+            <p class="list__desc">
+              Intelligent voice agents for outbound campaigns in a clinical laboratory. Implemented tool-calling
+              logic for real-time appointment and lab result validation connected directly to medical databases.
+            </p>
+            <p class="list__meta">2026 · Impact: 50% reduction in routine call handling time</p>
+          </li>
+          <li>
+            <p class="list__title">Theft Detection (Computer Vision)</p>
+            <p class="list__desc">
+              Production CV pipeline for micro-market security, including dataset curation, labeling,
+              model training/validation, and hold-out evaluation.
+            </p>
+            <p class="list__meta">2024 · Impact: 80% reduction in manual camera review time</p>
+          </li>
+        </ul>
       </section>
 
       <section id="research" class="section">
@@ -197,6 +246,16 @@
             </p>
           </li>
           <li>
+            <p class="list__title">NAIA: A Multi-Technology Virtual Assistant</p>
+            <p class="list__desc">Authors: Kenneth Barrios Quiroga, Samuel Solano Celis, <strong>Adrián Pabón Mendoza</strong>, Christian G. Quintero M., César Viloria-Nuñez</p>
+            <p class="list__meta">
+              IEEE Access (2025) ·
+              <a class="link" href="https://ieeexplore.ieee.org/document/11018004" target="_blank" rel="noreferrer">
+                View paper
+              </a>
+            </p>
+          </li>
+          <li>
             <p class="list__title">Looking for operational efficiency in itinerary assignment optimization: a comparison of different optimization approaches</p>
             <p class="list__desc">Authors: <strong>Adrián Pabón Mendoza</strong>, José Oñate López, Christian G. Quintero M.</p>
             <p class="list__meta">
@@ -224,12 +283,15 @@
             <li>FastAPI</li>
             <li>OpenAI API</li>
             <li>LangChain</li>
+            <li>LangGraph</li>
             <li>n8n</li>
             <li>ElevenLabs</li>
             <li>Docker</li>
             <li>SQL / NoSQL</li>
             <li>Supabase</li>
             <li>AWS</li>
+            <li>Amazon Bedrock</li>
+            <li>SageMaker</li>
             <li>OCI</li>
             <li>Azure</li>
           </ul>
@@ -306,7 +368,7 @@
 
     <footer class="footer">
       <p>© <span data-year></span> Adrián Pabón Mendoza</p>
-      <p class="footer__updated">Last updated: December 2025</p>
+      <p class="footer__updated">Last updated: <span data-last-updated></span></p>
     </footer>
 
     <script type="application/ld+json">
@@ -314,7 +376,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Adrián Pabón Mendoza",
-        "jobTitle": "Electronic Engineer · Applied AI",
+        "jobTitle": "Senior Data and AI Engineer",
         "url": "https://adrianpabon.github.io/",
         "image": "https://adrianpabon.github.io/data/profile.jpeg",
         "sameAs": [

@@ -4,6 +4,19 @@ function initYear() {
   year.textContent = String(new Date().getFullYear());
 }
 
+function initLastUpdated() {
+  const lastUpdated = document.querySelector("[data-last-updated]");
+  if (!lastUpdated) return;
+
+  const now = new Date();
+  const formatted = now.toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
+
+  lastUpdated.textContent = formatted;
+}
+
 function initCopyEmail() {
   const emailEl = document.querySelector("[data-email]");
   const copyButton = document.querySelector("[data-copy-email]");
@@ -103,6 +116,7 @@ function initSliders() {
 }
 
 initYear();
+initLastUpdated();
 initCopyEmail();
 initNavToggle();
 initSliders();
