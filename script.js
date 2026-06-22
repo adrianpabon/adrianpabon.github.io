@@ -3,9 +3,9 @@ const LANGUAGE_STORAGE_KEY = "preferred-language";
 
 const translations = {
   en: {
-    "meta.description": "Simple portfolio of Adrián Pabón Mendoza with quick links to key sections.",
-    "meta.title": "Adrián Pabón Mendoza | Portfolio",
-    "meta.socialDescription": "Applied AI and computer vision engineer. Projects, research, and contact info.",
+    "meta.description": "Senior Data and AI engineer specializing in ETL pipelines, LLM/RAG systems, and computer vision. Portfolio, projects, and research.",
+    "meta.title": "Adrián Pabón Mendoza | Senior Data and AI Engineer",
+    "meta.socialDescription": "ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact.",
     "meta.locale": "en_US",
     "image.profileAlt": "Photo of Adrián Pabón Mendoza",
     "intro.tagline": "Senior Data and AI Engineer focused on production LLM/RAG and computer vision systems.",
@@ -86,10 +86,10 @@ const translations = {
     "footer.updatedLabel": "Last updated:",
   },
   es: {
-    "meta.description": "Portafolio de Adrián Pabón Mendoza con enlaces rápidos a secciones clave.",
-    "meta.title": "Adrián Pabón Mendoza | Portafolio",
+    "meta.description": "Ingeniero de Datos e IA especializado en pipelines ETL, sistemas LLM/RAG y visión por computador. Portafolio, proyectos e investigación.",
+    "meta.title": "Adrián Pabón Mendoza | Ingeniero de Datos e IA",
     "meta.socialDescription":
-      "Ingeniero en IA aplicada y visión por computador. Proyectos, investigación e información de contacto.",
+      "Pipelines ETL, sistemas LLM/RAG y soluciones de visión por computador con impacto medible en negocio.",
     "meta.locale": "es_CO",
     "image.profileAlt": "Foto de Adrián Pabón Mendoza",
     "intro.tagline": "Ingeniero senior de datos e IA enfocado en sistemas LLM/RAG y visión por computador en producción.",
