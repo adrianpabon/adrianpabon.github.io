@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Simple portfolio of Adrián Pabón Mendoza with quick links to key sections."
+      content="Senior Data and AI engineer specializing in ETL pipelines, LLM/RAG systems, and computer vision. Portfolio, projects, and research."
+      data-i18n-content="meta.description"
     />
-    <link rel="canonical" href="https://adrianpabon.github.io/" />
+    <link rel="canonical" href="https://www.adrianpabonmendoza.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Adrián Pabón Mendoza | Portfolio" />
+    <meta
+      property="og:title"
+      content="Adrián Pabón Mendoza | Senior Data and AI Engineer"
+      data-i18n-content="meta.title"
+    />
     <meta
       property="og:description"
-      content="Applied AI and computer vision engineer. Projects, research, and contact info."
+      content="ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact."
+      data-i18n-content="meta.socialDescription"
     />
-    <meta property="og:url" content="https://adrianpabon.github.io/" />
-    <meta property="og:image" content="https://adrianpabon.github.io/data/profile.jpeg" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://www.adrianpabonmendoza.com/" />
+    <meta property="og:image" content="https://www.adrianpabonmendoza.com/data/profile.jpeg" />
+    <meta property="og:locale" content="en_US" data-i18n-content="meta.locale" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Adrián Pabón Mendoza | Portfolio" />
+    <meta
+      name="twitter:title"
+      content="Adrián Pabón Mendoza | Senior Data and AI Engineer"
+      data-i18n-content="meta.title"
+    />
     <meta
       name="twitter:description"
-      content="Applied AI and computer vision engineer. Projects, research, and contact info."
+      content="ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact."
+      data-i18n-content="meta.socialDescription"
     />
-    <meta name="twitter:image" content="https://adrianpabon.github.io/data/profile.jpeg" />
+    <meta name="twitter:image" content="https://www.adrianpabonmendoza.com/data/profile.jpeg" />
 
-    <title>Adrián Pabón Mendoza | Portfolio</title>
+    <title data-i18n="meta.title">Adrián Pabón Mendoza | Senior Data and AI Engineer</title>
 
     <link rel="icon" href="data/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -33,25 +44,21 @@
   </head>
   <body>
     <main class="layout" id="content">
-      <section id="home" class="intro" aria-label="Home">
-        <img
-          class="intro__photo"
-          src="data/profile.jpeg"
-          alt="Photo of Adrián Pabón Mendoza"
-          width="250"
-          height="250"
-          loading="eager"
-          decoding="async"
-        />
-        <h1 class="intro__name">Adrián Pabón Mendoza</h1>
-        <p class="intro__tagline">
-          Senior Data and AI Engineer focused on production LLM/RAG and computer vision systems.
-        </p>
-        <div class="intro__bio">
-          <p>Barranquilla, Colombia · Building applied AI products end-to-end.</p>
-          <p>Python · FastAPI · PyTorch · Redis · AWS · Azure · OCI</p>
-        </div>
-        <div class="intro__nav-wrap">
+      <section id="home" class="intro" aria-label="Home" data-i18n-aria-label="nav.home">
+        <div class="intro__tools">
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Language selector"
+            data-i18n-aria-label="language.selector"
+          >
+            <button class="lang-switch__btn" type="button" data-lang-option="en" aria-pressed="false">
+              EN
+            </button>
+            <button class="lang-switch__btn" type="button" data-lang-option="es" aria-pressed="false">
+              ESP
+            </button>
+          </div>
           <button
             class="nav-toggle"
             type="button"
@@ -59,6 +66,7 @@
             aria-expanded="false"
             aria-controls="primary-nav"
             aria-label="Toggle navigation"
+            data-i18n-aria-label="nav.toggle"
           >
             <span class="nav-toggle__bars" aria-hidden="true">
               <span></span>
@@ -66,68 +74,97 @@
               <span></span>
             </span>
           </button>
+        </div>
+        <img
+          class="intro__photo"
+          src="data/profile.jpeg"
+          alt="Photo of Adrián Pabón Mendoza"
+          data-i18n-alt="image.profileAlt"
+          width="250"
+          height="250"
+          loading="eager"
+          decoding="async"
+        />
+        <h1 class="intro__name">Adrián Pabón Mendoza</h1>
+        <p class="intro__tagline" data-i18n="intro.tagline">
+          Electronic engineer. Applied AI, computer vision, and language models.
+        </p>
+        <div class="intro__bio">
+          <p data-i18n="intro.experience">
+            AI engineer with 3 years of experience building production-ready solutions.
+          </p>
+          <p data-i18n="intro.focus">
+            I design and deploy LLM, RAG, and computer vision systems with measurable business impact.
+          </p>
+        </div>
+        <div class="intro__nav-wrap">
           <nav
             class="intro__nav"
             id="primary-nav"
             aria-label="Primary navigation"
+            data-i18n-aria-label="nav.primary"
             data-nav
           >
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#research">Research</a>
-            <a href="#interests">Interests & Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About Me</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#research" data-i18n="nav.research">Research</a>
+            <a href="#interests" data-i18n="nav.interests">Interests & Skills</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
           </nav>
         </div>
       </section>
 
       <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-          Hi! I am Adrian Pabon, an Electronics Engineer (Cum Laude) and AI Engineer from Barranquilla, Colombia.
-          I design and ship production AI systems with LLM/RAG and computer vision.
+        <h2 data-i18n="about.title">About Me</h2>
+        <p data-i18n="about.p1">
+          👋 Hey! I am Adrián Pabón, an electronic engineer from Barranquilla, Colombia, with 3 years of experience in applied AI.
+          I specialize in language models, computer vision, and cloud-based products for real users.
         </p>
-        <p>
+        <p data-i18n="about.p2">
+          I work across the full lifecycle, from idea and prototyping to deployment and iteration,
+          collaborating with multidisciplinary teams to deliver robust and scalable solutions.
+        </p>
+        <p data-i18n="about.p3">
           I have worked across research and industry, from scaling AI assistants for 13,000+ users to deploying
           computer vision pipelines that reduced manual camera review by 80%.
         </p>
       </section>
 
       <section id="experience" class="section">
-        <h2>Experience</h2>
+        <h2 data-i18n="experience.title">Experience</h2>
         <ul class="list">
           <li>
-            <p class="list__title">Senior Data and AI Engineer · Double V Partners</p>
-            <p class="list__desc">
+            <p class="list__title" data-i18n="experience.role1.title">Senior Data and AI Engineer · nyxn</p>
+            <p class="list__desc" data-i18n="experience.role1.desc">
               Leading the migration of core banking procedures to GenAI-optimized microservices and event-driven
               architectures. Designing serverless AWS solutions (Lambda, Step Functions, Bedrock) for secure,
               scalable AI workflows.
             </p>
-            <p class="list__meta">Remote, Colombia · Feb 2026 - Present</p>
+            <p class="list__meta" data-i18n="experience.role1.meta">Remote, Colombia · Feb 2026 - Present</p>
           </li>
           <li>
-            <p class="list__title">AI Product Specialist / AI Engineer · Optimize IT SAS</p>
-            <p class="list__desc">
+            <p class="list__title" data-i18n="experience.role2.title">AI Product Specialist / AI Engineer · Optimize IT SAS</p>
+            <p class="list__desc" data-i18n="experience.role2.desc">
               Improved theft detection with computer vision, reducing manual review by 80%. Delivered LLM/RAG APIs
               with embeddings + vector search and automated OCI backup workflows with serverless functions.
             </p>
-            <p class="list__meta">Barranquilla, Colombia · Jul 2024 - Feb 2026</p>
+            <p class="list__meta" data-i18n="experience.role2.meta">Barranquilla, Colombia · Jul 2024 - Feb 2026</p>
           </li>
           <li>
-            <p class="list__title">AI Researcher & Developer · Universidad del Norte</p>
-            <p class="list__desc">
+            <p class="list__title" data-i18n="experience.role3.title">AI Researcher & Developer · Universidad del Norte</p>
+            <p class="list__desc" data-i18n="experience.role3.desc">
               Built and scaled NAIA to 13,000+ users. Integrated OpenAI LLMs, Redis state management,
               Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.
             </p>
-            <p class="list__meta">Barranquilla, Colombia · Jan 2024 - Nov 2025</p>
+            <p class="list__meta" data-i18n="experience.role3.meta">Barranquilla, Colombia · Jan 2024 - Nov 2025</p>
           </li>
         </ul>
       </section>
 
       <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2 data-i18n="projects.title">Projects</h2>
         <article class="project-card">
           <div class="project-media">
             <div class="slider" data-slider>
@@ -136,6 +173,7 @@
                   <img
                     src="data/naia/naia_home.png"
                     alt="NAIA assistant interface mock"
+                    data-i18n-alt="projects.naia.image1Alt"
                     loading="lazy"
                     decoding="async"
                   />
@@ -144,6 +182,7 @@
                   <img
                     src="data/naia/naia_research.png"
                     alt="Dashboard analytics for NAIA usage"
+                    data-i18n-alt="projects.naia.image2Alt"
                     loading="lazy"
                     decoding="async"
                   />
@@ -152,21 +191,43 @@
                   <img
                     src="data/naia/meet_naia.png"
                     alt="System architecture sketch for NAIA"
+                    data-i18n-alt="projects.naia.image3Alt"
                     loading="lazy"
                     decoding="async"
                   />
                 </figure>
               </div>
               <div class="slider__controls">
-                <button class="slider__btn" type="button" data-slider-prev aria-label="Previous image">‹</button>
-                <button class="slider__btn" type="button" data-slider-next aria-label="Next image">›</button>
+                <button
+                  class="slider__btn"
+                  type="button"
+                  data-slider-prev
+                  aria-label="Previous image"
+                  data-i18n-aria-label="slider.previousImage"
+                >
+                  ‹
+                </button>
+                <button
+                  class="slider__btn"
+                  type="button"
+                  data-slider-next
+                  aria-label="Next image"
+                  data-i18n-aria-label="slider.nextImage"
+                >
+                  ›
+                </button>
               </div>
-              <div class="slider__dots" data-slider-dots aria-label="Slider pagination"></div>
+              <div
+                class="slider__dots"
+                data-slider-dots
+                aria-label="Slider pagination"
+                data-i18n-aria-label="slider.pagination"
+              ></div>
             </div>
           </div>
           <div class="project-content">
             <p class="list__title">NAIA</p>
-            <p class="list__desc">
+            <p class="list__desc" data-i18n="projects.naia.description">
               Multi-role assistant for Universidad del Norte that combines LLMs, RAG, Redis state, Azure services,
               and Microsoft Graph integrations for academic and administrative workflows.
             </p>
@@ -178,7 +239,7 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                Link to the project
+                <span data-i18n="projects.naia.link">Link to the project</span>
               </a>
               ·
               <a
@@ -187,33 +248,33 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                Watch Demo
+                <span data-i18n="projects.naia.demo">Watch Demo</span>
               </a>
             </p>
           </div>
         </article>
         <ul class="list">
           <li>
-            <p class="list__title">AI Agent Implementation for Medical Call Center</p>
-            <p class="list__desc">
+            <p class="list__title" data-i18n="projects.callCenter.title">AI Agent Implementation for Medical Call Center</p>
+            <p class="list__desc" data-i18n="projects.callCenter.description">
               Intelligent voice agents for outbound campaigns in a clinical laboratory. Implemented tool-calling
               logic for real-time appointment and lab result validation connected directly to medical databases.
             </p>
-            <p class="list__meta">2026 · Impact: 50% reduction in routine call handling time</p>
+            <p class="list__meta" data-i18n="projects.callCenter.meta">2026 · Impact: 50% reduction in routine call handling time</p>
           </li>
           <li>
-            <p class="list__title">Theft Detection (Computer Vision)</p>
-            <p class="list__desc">
+            <p class="list__title" data-i18n="projects.theft.title">Theft Detection (Computer Vision)</p>
+            <p class="list__desc" data-i18n="projects.theft.description">
               Production CV pipeline for micro-market security, including dataset curation, labeling,
               model training/validation, and hold-out evaluation.
             </p>
-            <p class="list__meta">2024 · Impact: 80% reduction in manual camera review time</p>
+            <p class="list__meta" data-i18n="projects.theft.meta">2024 · Impact: 80% reduction in manual camera review time</p>
           </li>
         </ul>
       </section>
 
       <section id="research" class="section">
-        <h2>Research</h2>
+        <h2 data-i18n="research.title">Research</h2>
         <div class="list__actions">
           <a
             class="button button--ghost"
@@ -221,47 +282,59 @@
             target="_blank"
             rel="noreferrer"
           >
-            Google Scholar
+            <span data-i18n="research.googleScholar">Google Scholar</span>
           </a>
         </div>
         <ul class="list">
           <li>
             <p class="list__title">NAIA: A Robust AI Framework for Academic Assistance</p>
-            <p class="list__desc">Authors: <strong>Adrián Pabón Mendoza</strong>, Kenneth Barrios Quiroga, Samuel Solano Celis, Christian G. Quintero M.</p>
+            <p class="list__desc">
+              <span data-i18n="research.authors">Authors:</span>
+              <strong>Adrián Pabón Mendoza</strong>, Kenneth Barrios Quiroga, Samuel Solano Celis, Christian G. Quintero M.
+            </p>
             <p class="list__meta">
               Systems (2025) ·
               <a class="link" href="https://www.mdpi.com/2079-8954/13/12/1091" target="_blank" rel="noreferrer">
-                View paper
+                <span data-i18n="research.viewPaper">View paper</span>
               </a>
             </p>
           </li>
           <li>
             <p class="list__title">A Comparison of Different Architectures for AI-Powered Virtual Assistants</p>
-            <p class="list__desc">Authors: Kenneth Barrios Quiroga, <strong>Adrián Pabón Mendoza</strong>, Samuel Solano Celis, Christian G. Quintero M., César Viloria-Nuñez</p>
+            <p class="list__desc">
+              <span data-i18n="research.authors">Authors:</span>
+              Kenneth Barrios Quiroga, <strong>Adrián Pabón Mendoza</strong>, Samuel Solano Celis, Christian G. Quintero M., César Viloria-Nuñez
+            </p>
             <p class="list__meta">
               IEEE TEMSCON LATAM (2025) ·
-              <a class="link" href="https://ieeexplore-ieee-org.ezproxy.uninorte.edu.co/document/11238808" target="_blank" rel="noreferrer">
-                View paper
-              </a>
-            </p>
+                <a class="link" href="https://ieeexplore.ieee.org/document/11238808" target="_blank" rel="noreferrer">
+                  <span data-i18n="research.viewPaper">View paper</span>
+                </a>
+              </p>
           </li>
           <li>
             <p class="list__title">NAIA: A Multi-Technology Virtual Assistant</p>
-            <p class="list__desc">Authors: Kenneth Barrios Quiroga, Samuel Solano Celis, <strong>Adrián Pabón Mendoza</strong>, Christian G. Quintero M., César Viloria-Nuñez</p>
+            <p class="list__desc">
+              <span data-i18n="research.authors">Authors:</span>
+              Kenneth Barrios Quiroga, Samuel Solano Celis, <strong>Adrián Pabón Mendoza</strong>, Christian G. Quintero M., César Viloria-Nuñez
+            </p>
             <p class="list__meta">
               IEEE Access (2025) ·
               <a class="link" href="https://ieeexplore.ieee.org/document/11018004" target="_blank" rel="noreferrer">
-                View paper
+                <span data-i18n="research.viewPaper">View paper</span>
               </a>
             </p>
           </li>
           <li>
             <p class="list__title">Looking for operational efficiency in itinerary assignment optimization: a comparison of different optimization approaches</p>
-            <p class="list__desc">Authors: <strong>Adrián Pabón Mendoza</strong>, José Oñate López, Christian G. Quintero M.</p>
+            <p class="list__desc">
+              <span data-i18n="research.authors">Authors:</span>
+              <strong>Adrián Pabón Mendoza</strong>, José Oñate López, Christian G. Quintero M.
+            </p>
             <p class="list__meta">
               IEEE COLCOM (2024) ·
               <a class="link" href="https://ieeexplore.ieee.org/abstract/document/10720293/" target="_blank" rel="noreferrer">
-                View paper
+                <span data-i18n="research.viewPaper">View paper</span>
               </a>
             </p>
           </li>
@@ -269,58 +342,147 @@
       </section>
 
       <section id="interests" class="section">
-        <h2>Interests & Skills</h2>
+        <h2 data-i18n="interests.title">Interests & Skills</h2>
         <div class="pill-group" aria-label="Hard skills">
-          <p class="pill-heading">Hard skills</p>
-          <ul class="pill-list">
-            <li>Python</li>
-            <li>Databricks</li>
-            <li>Redis</li>
-            <li>LLMs</li>
-            <li>RAG</li>
-            <li>Machine Learning</li>
-            <li>PyTorch</li>
-            <li>FastAPI</li>
-            <li>OpenAI API</li>
-            <li>LangChain</li>
-            <li>LangGraph</li>
-            <li>n8n</li>
-            <li>ElevenLabs</li>
-            <li>Docker</li>
-            <li>SQL / NoSQL</li>
-            <li>Supabase</li>
-            <li>AWS</li>
-            <li>Amazon Bedrock</li>
-            <li>SageMaker</li>
-            <li>OCI</li>
-            <li>Azure</li>
+          <p class="pill-heading" data-i18n="interests.hardSkills">Hard skills</p>
+          <ul class="pill-list pill-list--icons" aria-label="Technology stack">
+            <li>
+              <span class="skill-chip" role="img" aria-label="Python" title="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Databricks" title="Databricks">
+                <img src="https://api.iconify.design/simple-icons:databricks.svg?color=%23FF3621" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Redis" title="Redis">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="LLMs" title="LLMs">
+                <img src="https://api.iconify.design/tabler:brain.svg?color=%234b5563" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="RAG" title="RAG">
+                <img src="https://api.iconify.design/tabler:database-search.svg?color=%234b5563" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Machine Learning" title="Machine Learning">
+                <img src="https://api.iconify.design/carbon:machine-learning-model.svg?color=%234b5563" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="PyTorch" title="PyTorch">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="FastAPI" title="FastAPI">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="OpenAI" title="OpenAI">
+                <img src="https://api.iconify.design/logos:openai-icon.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="LangChain" title="LangChain">
+                <img src="https://api.iconify.design/simple-icons:langchain.svg?color=%2300A67E" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="n8n" title="n8n">
+                <img src="https://api.iconify.design/simple-icons:n8n.svg?color=%23EA4B71" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="ElevenLabs" title="ElevenLabs">
+                <img src="https://api.iconify.design/simple-icons:elevenlabs.svg?color=%23111111" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Docker" title="Docker">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="PostgreSQL" title="PostgreSQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="MongoDB" title="MongoDB">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Supabase" title="Supabase">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="AWS" title="AWS">
+                <img src="https://api.iconify.design/simple-icons:amazonaws.svg?color=%23FF9900" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Amazon Bedrock" title="Amazon Bedrock">
+                <img src="https://api.iconify.design/tabler:cube.svg?color=%234b5563" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="SageMaker" title="SageMaker">
+                <img src="https://api.iconify.design/material-symbols:network-node.svg?color=%234b5563" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Oracle Cloud Infrastructure" title="OCI">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="Azure" title="Azure">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
+            <li>
+              <span class="skill-chip" role="img" aria-label="LangGraph" title="LangGraph">
+                <img src="https://api.iconify.design/simple-icons:langgraph.svg?color=%230066FF" alt="" loading="lazy" decoding="async" />
+              </span>
+            </li>
           </ul>
         </div>
         <div class="pill-group" aria-label="Soft skills">
-          <p class="pill-heading">Soft skills</p>
+          <p class="pill-heading" data-i18n="interests.softSkills">Soft skills</p>
           <ul class="pill-list">
-            <li>Problem solving</li>
-            <li>Clear communication</li>
-            <li>Technical writing</li>
-            <li>Team collaboration</li>
-            <li>Ownership</li>
-            <li>Fast prototyping</li>
+            <li data-i18n="interests.soft.problemSolving">Problem solving</li>
+            <li data-i18n="interests.soft.communication">Clear communication</li>
+            <li data-i18n="interests.soft.writing">Technical writing</li>
+            <li data-i18n="interests.soft.teamwork">Team collaboration</li>
+            <li data-i18n="interests.soft.ownership">Ownership</li>
+            <li data-i18n="interests.soft.prototyping">Fast prototyping</li>
           </ul>
         </div>
       </section>
 
       <section id="contact" class="section">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact.title">Contact</h2>
         <div class="contact-card">
           <div class="contact__row">
-            <span class="contact__label">Email</span>
+            <span class="contact__label" data-i18n="contact.email">Email</span>
             <span class="contact__value" data-email>adrianpabonmendoza@gmail.com</span>
-            <button class="button button--ghost" type="button" data-copy-email>
+            <button class="button button--ghost" type="button" data-copy-email data-i18n="contact.copy">
               Copy
             </button>
           </div>
           <div class="contact__row">
-            <span class="contact__label">LinkedIn</span>
+            <span class="contact__label" data-i18n="contact.linkedin">LinkedIn</span>
             <a
               class="contact__value link"
               href="https://www.linkedin.com/in/adrianpabonmendoza/"
@@ -331,7 +493,7 @@
             </a>
           </div>
           <div class="contact__row">
-            <span class="contact__label">GitHub</span>
+            <span class="contact__label" data-i18n="contact.github">GitHub</span>
             <a
               class="contact__value link"
               href="https://github.com/adrianpabon"
@@ -342,7 +504,7 @@
             </a>
           </div>
           <div class="contact__row">
-            <span class="contact__label">ORCID</span>
+            <span class="contact__label" data-i18n="contact.orcid">ORCID</span>
             <a
               class="contact__value link"
               href="https://orcid.org/0000-0002-9554-1752"
@@ -353,13 +515,13 @@
             </a>
           </div>
           <div class="contact__row">
-            <span class="contact__label">CV</span>
+            <span class="contact__label" data-i18n="contact.cv">CV</span>
             <a
               class="contact__value link"
               href="data/Adrian_Pabon_CV.pdf"
               download
             >
-              Download
+              <span data-i18n="contact.download">Download</span>
             </a>
           </div>
         </div>
@@ -367,8 +529,8 @@
     </main>
 
     <footer class="footer">
-      <p>© <span data-year></span> Adrián Pabón Mendoza</p>
-      <p class="footer__updated">Last updated: <span data-last-updated></span></p>
+      <p>© Adrián Pabón Mendoza</p>
+      <p class="footer__updated"><span data-i18n="footer.updatedLabel">Last updated:</span> <span data-last-updated></span></p>
     </footer>
 
     <script type="application/ld+json">
@@ -377,8 +539,8 @@
         "@type": "Person",
         "name": "Adrián Pabón Mendoza",
         "jobTitle": "Senior Data and AI Engineer",
-        "url": "https://adrianpabon.github.io/",
-        "image": "https://adrianpabon.github.io/data/profile.jpeg",
+        "url": "https://www.adrianpabonmendoza.com/",
+        "image": "https://www.adrianpabonmendoza.com/data/profile.jpeg",
         "sameAs": [
           "https://www.linkedin.com/in/adrianpabonmendoza/",
           "https://github.com/adrianpabon",
