@@ -97,6 +97,46 @@ p {
   text-align: center;
 }
 
+.intro__availability {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+.impact-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin: 0.25rem 0 0;
+}
+
+.impact-strip div {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 0.75rem 0.6rem;
+}
+
+.impact-strip dt {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.impact-strip dd {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.25;
+  margin: 0.25rem 0 0;
+}
+
+.intro__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
 .intro__nav-wrap {
   width: 100%;
   display: flex;
@@ -219,6 +259,10 @@ p {
   color: var(--muted);
 }
 
+.section__lead {
+  max-width: 68ch;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -305,6 +349,35 @@ p {
 
 .pill-group {
   margin-top: 1rem;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.85rem 0 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.notes-list li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.95rem 1rem;
+}
+
+.notes-list .notes-list__meta {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.notes-list .notes-list__title {
+  color: var(--text);
+  font-weight: 750;
+  margin-top: 0.2rem;
 }
 
 .pill-heading {
@@ -462,6 +535,20 @@ p {
   border-color: var(--border);
 }
 
+.button--cv {
+  border-color: transparent;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.28);
+  padding: 0.7rem 1.15rem;
+}
+
+.button--cv:hover,
+.button--cv:focus-visible {
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.34);
+}
+
 .button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -488,6 +575,10 @@ p {
   .intro__photo {
     width: 150px;
     height: 150px;
+  }
+
+  .impact-strip {
+    grid-template-columns: 1fr;
   }
 
   .contact__row {
