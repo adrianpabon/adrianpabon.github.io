@@ -344,66 +344,34 @@ p {
   font-weight: 600;
 }
 
-.pill-list--icons {
-  gap: 0.65rem;
-}
-
-.pill-list--icons li {
-  padding: 0;
-  background: none;
-  border: none;
-}
-
-.skill-chip {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--card);
-  display: grid;
-  place-items: center;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
-}
-
-.skill-chip img {
-  width: auto;
-  height: auto;
-  max-width: 24px;
-  max-height: 24px;
-  display: block;
-}
-
-.pill-group {
-  margin-top: 1rem;
-}
-
-.notes-list {
-  list-style: none;
-  padding: 0;
+.skill-group__label {
   margin: 0.85rem 0 0;
-  display: grid;
-  gap: 0.7rem;
-}
-
-.notes-list li {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.95rem 1rem;
-}
-
-.notes-list .notes-list__meta {
-  color: var(--accent);
+  color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.notes-list .notes-list__title {
-  color: var(--text);
-  font-weight: 750;
-  margin-top: 0.2rem;
+.pill-list--skills {
+  margin-top: 0.45rem;
+}
+
+.pill-list--skills .skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.skill-chip img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.pill-group {
+  margin-top: 1rem;
 }
 
 .pill-heading {
