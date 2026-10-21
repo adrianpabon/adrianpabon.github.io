@@ -112,7 +112,7 @@ p {
 
 .impact-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.65rem;
   margin: 0.25rem 0 0;
 }
@@ -140,7 +140,10 @@ p {
 
 .intro__cta {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
   justify-content: center;
+  align-items: center;
   margin-top: 0.2rem;
 }
 
@@ -299,6 +302,22 @@ p {
 .list__desc {
   margin: 0;
   color: var(--muted);
+}
+
+.list__points {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+  list-style: disc;
+  color: var(--muted);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.list .list__points li {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
 
 .list__meta {
@@ -585,7 +604,7 @@ p {
   }
 
   .impact-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact__row {

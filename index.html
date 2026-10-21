@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Senior Data and AI engineer specializing in ETL pipelines, LLM/RAG systems, and computer vision. Portfolio, projects, and research."
+      content="Senior AI & Data Engineer in Colombia building production GenAI on AWS: agentic AI systems, LLM/RAG, serverless event-driven architectures, and Java microservices. Open to Senior AI/ML and Data Engineering roles."
       data-i18n-content="meta.description"
     />
     <link rel="canonical" href="https://www.adrianpabonmendoza.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.adrianpabonmendoza.com/" />
+    <link rel="alternate" hreflang="es" href="https://www.adrianpabonmendoza.com/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.adrianpabonmendoza.com/" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Adrián Pabón Mendoza | Senior Data and AI Engineer"
+      content="Adrián Pabón Mendoza | Senior AI & Data Engineer · GenAI, AWS, Agentic AI"
       data-i18n-content="meta.title"
     />
     <meta
       property="og:description"
-      content="ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact."
+      content="Production GenAI on AWS: agentic AI systems, LLM/RAG, and serverless event-driven architectures with measurable impact."
       data-i18n-content="meta.socialDescription"
     />
     <meta property="og:url" content="https://www.adrianpabonmendoza.com/" />
@@ -26,17 +29,17 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Adrián Pabón Mendoza | Senior Data and AI Engineer"
+      content="Adrián Pabón Mendoza | Senior AI & Data Engineer · GenAI, AWS, Agentic AI"
       data-i18n-content="meta.title"
     />
     <meta
       name="twitter:description"
-      content="ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact."
+      content="Production GenAI on AWS: agentic AI systems, LLM/RAG, and serverless event-driven architectures with measurable impact."
       data-i18n-content="meta.socialDescription"
     />
     <meta name="twitter:image" content="https://www.adrianpabonmendoza.com/data/profile.jpeg" />
 
-    <title data-i18n="meta.title">Adrián Pabón Mendoza | Senior Data and AI Engineer</title>
+    <title data-i18n="meta.title">Adrián Pabón Mendoza | Senior AI & Data Engineer · GenAI, AWS, Agentic AI</title>
 
     <link rel="icon" href="data/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -52,10 +55,10 @@
             aria-label="Language selector"
             data-i18n-aria-label="language.selector"
           >
-            <button class="lang-switch__btn" type="button" data-lang-option="en" aria-pressed="false">
+            <button class="lang-switch__btn" type="button" data-lang-option="en" data-lang-href="./" aria-pressed="false">
               EN
             </button>
-            <button class="lang-switch__btn" type="button" data-lang-option="es" aria-pressed="false">
+            <button class="lang-switch__btn" type="button" data-lang-option="es" data-lang-href="es/" aria-pressed="false">
               ESP
             </button>
           </div>
@@ -87,7 +90,7 @@
         />
         <h1 class="intro__name">Adrián Pabón Mendoza</h1>
         <p class="intro__tagline" data-i18n="intro.tagline">
-          Electronic engineer. Applied AI, computer vision, and language models.
+          I build production GenAI systems: agentic architectures, LLM/RAG assistants, and serverless data platforms on AWS.
         </p>
         <div class="intro__bio">
           <p data-i18n="intro.experience">
@@ -98,7 +101,7 @@
           </p>
         </div>
         <p class="intro__availability" data-i18n="intro.availability">
-          Currently building AI systems at nyxn · open to selected collaborations and opportunities.
+          Senior Data and AI Engineer at nyxn · open to Senior AI, ML, and Data Engineering roles.
         </p>
         <dl class="impact-strip" aria-label="Career impact highlights">
           <div>
@@ -113,10 +116,29 @@
             <dt>3-5s</dt>
             <dd data-i18n="intro.metricLatency">assistant responses</dd>
           </div>
+          <div>
+            <dt>2d → 2h</dt>
+            <dd data-i18n="intro.metricDocs">migration docs time</dd>
+          </div>
         </dl>
         <div class="intro__cta">
           <a class="button button--cv" href="data/Adrian_Pabon_CV.pdf" download data-i18n="intro.cvCta">
             Download CV
+          </a>
+          <a
+            class="button button--ghost"
+            href="mailto:adrianpabonmendoza@gmail.com?subject=Job%20opportunity%20for%20Adri%C3%A1n%20Pab%C3%B3n"
+            data-i18n="intro.contactCta"
+          >
+            Contact me
+          </a>
+          <a
+            class="button button--ghost"
+            href="https://www.linkedin.com/in/adrianpabonmendoza/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
         </div>
         <div class="intro__nav-wrap">
@@ -160,27 +182,28 @@
         <ul class="list">
           <li>
             <p class="list__title" data-i18n="experience.role1.title">Senior Data and AI Engineer · nyxn</p>
-            <p class="list__desc" data-i18n="experience.role1.desc">
-              Leading the migration of core banking procedures to GenAI-optimized microservices and event-driven
-              architectures. Designing serverless AWS solutions (Lambda, Step Functions, Bedrock) for secure,
-              scalable AI workflows.
-            </p>
+            <ul class="list__points">
+              <li data-i18n="experience.role1.point1">Designed and orchestrated a serverless, event-driven AWS product to track open roles across the company (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES).</li>
+              <li data-i18n="experience.role1.point2">Built an agentic architecture that migrates stored procedures to Java 25 microservices with hexagonal architecture: SP and dependency analysis, logic migration, and construction of adapters, models, and utilities.</li>
+              <li data-i18n="experience.role1.point3">Cut technical documentation time for SP migrations (Sonar, Prisma, Veracode, unit tests) from 2 days to 2 hours.</li>
+            </ul>
             <p class="list__meta" data-i18n="experience.role1.meta">Remote, Colombia · Feb 2026 - Present</p>
           </li>
           <li>
             <p class="list__title" data-i18n="experience.role2.title">AI Product Specialist / AI Engineer · Optimize IT SAS</p>
-            <p class="list__desc" data-i18n="experience.role2.desc">
-              Improved theft detection with computer vision, reducing manual review by 80%. Delivered LLM/RAG APIs
-              with embeddings + vector search and automated OCI backup workflows with serverless functions.
-            </p>
+            <ul class="list__points">
+              <li data-i18n="experience.role2.point1">Improved theft detection with computer vision, reducing manual review by 80%.</li>
+              <li data-i18n="experience.role2.point2">Delivered LLM/RAG APIs with embeddings and vector search.</li>
+              <li data-i18n="experience.role2.point3">Automated OCI backup workflows with serverless functions.</li>
+            </ul>
             <p class="list__meta" data-i18n="experience.role2.meta">Barranquilla, Colombia · Jul 2024 - Feb 2026</p>
           </li>
           <li>
             <p class="list__title" data-i18n="experience.role3.title">AI Researcher & Developer · Universidad del Norte</p>
-            <p class="list__desc" data-i18n="experience.role3.desc">
-              Built and scaled NAIA to 13,000+ users. Integrated OpenAI LLMs, Redis state management,
-              Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.
-            </p>
+            <ul class="list__points">
+              <li data-i18n="experience.role3.point1">Built and scaled NAIA to 13,000+ users.</li>
+              <li data-i18n="experience.role3.point2">Integrated OpenAI LLMs, Redis state management, Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.</li>
+            </ul>
             <p class="list__meta" data-i18n="experience.role3.meta">Barranquilla, Colombia · Jan 2024 - Nov 2025</p>
           </li>
         </ul>
@@ -583,7 +606,36 @@
         "@type": "Person",
         "name": "Adrián Pabón Mendoza",
         "jobTitle": "Senior Data and AI Engineer",
+        "description": "Senior AI & Data Engineer building production GenAI on AWS: agentic AI systems, LLM/RAG, and serverless event-driven architectures.",
         "url": "https://www.adrianpabonmendoza.com/",
+        "email": "mailto:adrianpabonmendoza@gmail.com",
+        "worksFor": { "@type": "Organization", "name": "nyxn" },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Senior AI & Data Engineer",
+          "occupationLocation": { "@type": "Country", "name": "Colombia" }
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barranquilla",
+          "addressCountry": "CO"
+        },
+        "knowsLanguage": ["es", "en"],
+        "knowsAbout": [
+          "Generative AI",
+          "Agentic AI",
+          "Large Language Models",
+          "Retrieval-Augmented Generation",
+          "Amazon Web Services",
+          "Amazon Bedrock",
+          "Serverless architecture",
+          "Event-driven architecture",
+          "Data engineering",
+          "Computer vision",
+          "Java microservices",
+          "Hexagonal architecture",
+          "Python"
+        ],
         "image": "https://www.adrianpabonmendoza.com/data/profile.jpeg",
         "sameAs": [
           "https://www.linkedin.com/in/adrianpabonmendoza/",
