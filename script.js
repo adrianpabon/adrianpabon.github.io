@@ -1,21 +1,24 @@
 const SUPPORTED_LANGUAGES = ["en", "es"];
-const LANGUAGE_STORAGE_KEY = "preferred-language";
 
 const translations = {
   en: {
-    "meta.description": "Senior Data and AI engineer specializing in ETL pipelines, LLM/RAG systems, and computer vision. Portfolio, projects, and research.",
-    "meta.title": "Adrián Pabón Mendoza | Senior Data and AI Engineer",
-    "meta.socialDescription": "ETL pipelines, LLM/RAG systems, and computer vision solutions with measurable business impact.",
+    "meta.description":
+      "Senior AI & Data Engineer in Colombia building production GenAI on AWS: agentic AI systems, LLM/RAG, serverless event-driven architectures, and Java microservices. Open to Senior AI/ML and Data Engineering roles.",
+    "meta.title": "Adrián Pabón Mendoza | Senior AI & Data Engineer · GenAI, AWS, Agentic AI",
+    "meta.socialDescription":
+      "Production GenAI on AWS: agentic AI systems, LLM/RAG, and serverless event-driven architectures with measurable impact.",
     "meta.locale": "en_US",
     "image.profileAlt": "Photo of Adrián Pabón Mendoza",
-    "intro.tagline": "I build production AI systems: LLM/RAG assistants, computer vision pipelines, and cloud data workflows.",
+    "intro.tagline": "I build production GenAI systems: agentic architectures, LLM/RAG assistants, and serverless data platforms on AWS.",
     "intro.experience": "Senior Data and AI Engineer with 3 years of experience taking applied AI from prototype to production.",
     "intro.focus": "My work connects language models, data pipelines, and cloud infrastructure with measurable business impact.",
-    "intro.availability": "Currently building AI systems at nyxn · open to selected collaborations and opportunities.",
+    "intro.availability": "Senior Data and AI Engineer at nyxn · open to Senior AI, ML, and Data Engineering roles.",
     "intro.metricUsers": "users reached",
     "intro.metricReview": "less manual review",
     "intro.metricLatency": "assistant responses",
+    "intro.metricDocs": "migration docs time",
     "intro.cvCta": "Download CV",
+    "intro.contactCta": "Contact me",
     "language.selector": "Language selector",
     "nav.toggle": "Toggle navigation",
     "nav.primary": "Primary navigation",
@@ -36,16 +39,26 @@ const translations = {
       "I have worked across research and industry, from scaling AI assistants for 13,000+ users to deploying computer vision pipelines that reduced manual camera review by 80%.",
     "experience.title": "Experience",
     "experience.role1.title": "Senior Data and AI Engineer · nyxn",
-    "experience.role1.desc":
-      "Leading the migration of core banking procedures to GenAI-optimized microservices and event-driven architectures. Designing serverless AWS solutions (Lambda, Step Functions, Bedrock) for secure, scalable AI workflows.",
+    "experience.role1.point1":
+      "Designed and orchestrated a serverless, event-driven AWS product to track open roles across the company (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES).",
+    "experience.role1.point2":
+      "Built an agentic architecture that migrates stored procedures to Java 25 microservices with hexagonal architecture: SP and dependency analysis, logic migration, and construction of adapters, models, and utilities.",
+    "experience.role1.point3":
+      "Cut technical documentation time for SP migrations (Sonar, Prisma, Veracode, unit tests) from 2 days to 2 hours.",
     "experience.role1.meta": "Remote, Colombia · Feb 2026 - Present",
     "experience.role2.title": "AI Product Specialist / AI Engineer · Optimize IT SAS",
-    "experience.role2.desc":
-      "Improved theft detection with computer vision, reducing manual review by 80%. Delivered LLM/RAG APIs with embeddings + vector search and automated OCI backup workflows with serverless functions.",
+    "experience.role2.point1":
+      "Improved theft detection with computer vision, reducing manual review by 80%.",
+    "experience.role2.point2":
+      "Delivered LLM/RAG APIs with embeddings and vector search.",
+    "experience.role2.point3":
+      "Automated OCI backup workflows with serverless functions.",
     "experience.role2.meta": "Barranquilla, Colombia · Jul 2024 - Feb 2026",
     "experience.role3.title": "AI Researcher & Developer · Universidad del Norte",
-    "experience.role3.desc":
-      "Built and scaled NAIA to 13,000+ users. Integrated OpenAI LLMs, Redis state management, Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.",
+    "experience.role3.point1":
+      "Built and scaled NAIA to 13,000+ users.",
+    "experience.role3.point2":
+      "Integrated OpenAI LLMs, Redis state management, Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.",
     "experience.role3.meta": "Barranquilla, Colombia · Jan 2024 - Nov 2025",
     "projects.title": "Projects",
     "projects.naia.image1Alt": "NAIA assistant interface mock",
@@ -100,20 +113,23 @@ const translations = {
     "footer.updatedLabel": "Last updated:",
   },
   es: {
-    "meta.description": "Ingeniero de Datos e IA especializado en pipelines ETL, sistemas LLM/RAG y visión por computador. Portafolio, proyectos e investigación.",
-    "meta.title": "Adrián Pabón Mendoza | Ingeniero de Datos e IA",
+    "meta.description":
+      "Ingeniero Senior de IA y Datos en Colombia que construye GenAI en producción sobre AWS: sistemas de IA agéntica, LLM/RAG, arquitecturas serverless event-driven y microservicios en Java. Abierto a roles Senior de IA/ML e Ingeniería de Datos.",
+    "meta.title": "Adrián Pabón Mendoza | Ingeniero Senior de IA y Datos · GenAI, AWS, IA agéntica",
     "meta.socialDescription":
-      "Pipelines ETL, sistemas LLM/RAG y soluciones de visión por computador con impacto medible en negocio.",
+      "GenAI en producción sobre AWS: sistemas de IA agéntica, LLM/RAG y arquitecturas serverless event-driven con impacto medible.",
     "meta.locale": "es_CO",
     "image.profileAlt": "Foto de Adrián Pabón Mendoza",
-    "intro.tagline": "Construyo sistemas de IA en producción: asistentes LLM/RAG, pipelines de visión por computador y flujos cloud de datos.",
+    "intro.tagline": "Construyo sistemas GenAI en producción: arquitecturas agénticas, asistentes LLM/RAG y plataformas de datos serverless en AWS.",
     "intro.experience": "Ingeniero Senior de Datos e IA con 3 años de experiencia llevando IA aplicada de prototipo a producción.",
     "intro.focus": "Mi trabajo conecta modelos de lenguaje, pipelines de datos e infraestructura cloud con impacto medible en negocio.",
-    "intro.availability": "Actualmente construyo sistemas de IA en nyxn · abierto a colaboraciones y oportunidades seleccionadas.",
+    "intro.availability": "Ingeniero Senior de Datos e IA en nyxn · abierto a roles Senior de IA, ML e Ingeniería de Datos.",
     "intro.metricUsers": "usuarios alcanzados",
     "intro.metricReview": "menos revisión manual",
     "intro.metricLatency": "respuestas del asistente",
+    "intro.metricDocs": "documentación por migración",
     "intro.cvCta": "Descargar CV",
+    "intro.contactCta": "Contáctame",
     "language.selector": "Selector de idioma",
     "nav.toggle": "Mostrar navegación",
     "nav.primary": "Navegación principal",
@@ -134,16 +150,26 @@ const translations = {
       "He trabajado entre investigación e industria, escalando asistentes de IA para más de 13,000 usuarios y desplegando pipelines de visión por computador que redujeron en 80% la revisión manual de cámaras.",
     "experience.title": "Experiencia",
     "experience.role1.title": "Ingeniero Senior de Datos e IA · nyxn",
-    "experience.role1.desc":
-      "Lidero la migración de procesos core de banca a microservicios optimizados con GenAI y arquitecturas event-driven. Diseño soluciones serverless en AWS (Lambda, Step Functions, Bedrock) para flujos de IA seguros y escalables.",
+    "experience.role1.point1":
+      "Diseñé y orquesté un producto serverless y event-driven en AWS para hacer seguimiento de los roles abiertos en la compañía (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES).",
+    "experience.role1.point2":
+      "Construí una arquitectura agéntica que migra stored procedures a microservicios en Java 25 con arquitectura hexagonal: análisis del SP y sus dependencias, migración de la lógica y construcción de adapters, modelos y utilidades.",
+    "experience.role1.point3":
+      "Reduje el tiempo de documentación técnica de las migraciones de SP (Sonar, Prisma, Veracode, pruebas unitarias) de 2 días a 2 horas.",
     "experience.role1.meta": "Remoto, Colombia · Feb 2026 - Actualidad",
     "experience.role2.title": "Especialista de Producto IA / Ingeniero IA · Optimize IT SAS",
-    "experience.role2.desc":
-      "Mejoré la detección de robos con visión por computador, reduciendo 80% la revisión manual. Entregué APIs con LLM/RAG, embeddings y búsqueda vectorial, junto con respaldos automatizados en OCI con funciones serverless.",
+    "experience.role2.point1":
+      "Mejoré la detección de robos con visión por computador, reduciendo 80% la revisión manual.",
+    "experience.role2.point2":
+      "Entregué APIs con LLM/RAG, embeddings y búsqueda vectorial.",
+    "experience.role2.point3":
+      "Automaticé respaldos en OCI con funciones serverless.",
     "experience.role2.meta": "Barranquilla, Colombia · Jul 2024 - Feb 2026",
     "experience.role3.title": "Investigador y Desarrollador de IA · Universidad del Norte",
-    "experience.role3.desc":
-      "Construí y escalé NAIA para más de 13,000 usuarios. Integré LLMs de OpenAI, estado con Redis, servicios de Azure y Microsoft Graph para ofrecer capacidades seguras en 3-5 segundos.",
+    "experience.role3.point1":
+      "Construí y escalé NAIA para más de 13,000 usuarios.",
+    "experience.role3.point2":
+      "Integré LLMs de OpenAI, estado con Redis, servicios de Azure y Microsoft Graph para ofrecer capacidades seguras en 3-5 segundos.",
     "experience.role3.meta": "Barranquilla, Colombia · Ene 2024 - Nov 2025",
     "projects.title": "Proyectos",
     "projects.naia.image1Alt": "Interfaz del asistente NAIA",
@@ -216,24 +242,10 @@ function interpolate(template, values) {
   return template.replace(/{{\s*(\w+)\s*}}/g, (_, token) => String(values[token] ?? ""));
 }
 
-function getStoredLanguage() {
-  try {
-    const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    if (stored && SUPPORTED_LANGUAGES.includes(stored)) {
-      return stored;
-    }
-  } catch {
-    return null;
-  }
-  return null;
-}
-
-function getPreferredLanguage() {
-  const stored = getStoredLanguage();
-  if (stored) return stored;
-
-  const browserLanguage = (navigator.language || "en").slice(0, 2).toLowerCase();
-  return SUPPORTED_LANGUAGES.includes(browserLanguage) ? browserLanguage : "en";
+// Each language lives at its own URL (/ and /es/), so the page language is fixed by <html lang>.
+function getPageLanguage() {
+  const pageLanguage = document.documentElement.lang.slice(0, 2).toLowerCase();
+  return SUPPORTED_LANGUAGES.includes(pageLanguage) ? pageLanguage : "en";
 }
 
 function updateLastUpdated() {
@@ -292,7 +304,7 @@ function updateSliderDotsLabels() {
   });
 }
 
-function setLanguage(language, persist = true) {
+function setLanguage(language) {
   if (!SUPPORTED_LANGUAGES.includes(language)) return;
 
   currentLanguage = language;
@@ -301,14 +313,6 @@ function setLanguage(language, persist = true) {
   updateLanguageSwitch();
   updateSliderDotsLabels();
   updateLastUpdated();
-
-  if (persist) {
-    try {
-      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
-    } catch {
-      return;
-    }
-  }
 }
 
 function initLanguageToggle() {
@@ -317,11 +321,13 @@ function initLanguageToggle() {
   options.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedLanguage = button.getAttribute("data-lang-option") || "en";
-      setLanguage(selectedLanguage);
+      const href = button.getAttribute("data-lang-href");
+      if (selectedLanguage === currentLanguage || !href) return;
+      window.location.href = href;
     });
   });
 
-  setLanguage(getPreferredLanguage(), false);
+  setLanguage(getPageLanguage());
 }
 
 function initCopyEmail() {
