@@ -1,6 +1,9 @@
 // Generates es/index.html from index.html + the Spanish strings in script.js,
-// so search engines can index a real Spanish page. Run after editing content:
+// so search engines can index a real Spanish page. It also stamps styles.css and
+// script.js URLs with a content hash so browsers never mix new HTML with stale
+// cached assets. Run after editing content:
 //   node tools/build-es.mjs
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -21,7 +24,12 @@ const t = (key) => {
   return es[key];
 };
 
-let html = readFileSync(join(root, "index.html"), "utf8");
+const indexPath = join(root, "index.html");
+let html = readFileSync(indexPath, "utf8");
+const assetHash = (asset) =>
+  createHash("sha256").update(readFileSync(join(root, asset))).digest("hex").slice(0, 10);
+html = html.replace(/(styles\.css|script\.js)\?v=[^"]*/g, (_, asset) => `${asset}?v=${assetHash(asset)}`);
+writeFileSync(indexPath, html);
 
 // Text content: elements marked with data-i18n hold plain text only.
 html = html.replace(

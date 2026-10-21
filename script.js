@@ -254,7 +254,9 @@ function updateTranslatableText() {
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     if (!key) return;
-    node.textContent = getMessage(key);
+    // Keep the HTML text if a key is missing (e.g. a stale cached script.js).
+    const message = getMessage(key);
+    if (message) node.textContent = message;
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
