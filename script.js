@@ -3,8 +3,8 @@ const SUPPORTED_LANGUAGES = ["en", "es"];
 const translations = {
   en: {
     "meta.description":
-      "Senior AI & Data Engineer in Colombia building production GenAI on AWS: agentic AI systems, LLM/RAG, serverless event-driven architectures, and Java microservices. Open to Senior AI/ML and Data Engineering roles.",
-    "meta.title": "Adrián Pabón Mendoza | Senior AI & Data Engineer · GenAI, AWS, Agentic AI",
+      "Senior AI & Data Engineer in Colombia building production GenAI on AWS: agentic AI systems, LLM/RAG, serverless event-driven architectures, and Java microservices. AWS Certified Solutions Architect – Associate.",
+    "meta.title": "Adrián Pabón Mendoza | Senior AI & Data Engineer · AWS Certified Solutions Architect · Agentic AI",
     "meta.socialDescription":
       "Production GenAI on AWS: agentic AI systems, LLM/RAG, and serverless event-driven architectures with measurable impact.",
     "meta.locale": "en_US",
@@ -12,9 +12,9 @@ const translations = {
     "intro.tagline": "I build production GenAI systems: agentic architectures, LLM/RAG assistants, and serverless data platforms on AWS.",
     "intro.experience": "Senior Data and AI Engineer with 3 years of experience taking applied AI from prototype to production.",
     "intro.focus": "My work connects language models, data pipelines, and cloud infrastructure with measurable business impact.",
-    "intro.availability": "Senior Data and AI Engineer at nyxn · open to Senior AI, ML, and Data Engineering roles.",
+    "intro.availability": "Senior Data and AI Engineer at nyxn · AWS Certified Solutions Architect – Associate",
     "intro.metricUsers": "users reached",
-    "intro.metricReview": "less manual review",
+    "intro.metricCalls": "less routine call time",
     "intro.metricLatency": "assistant responses",
     "intro.metricDocs": "migration docs time",
     "intro.cvCta": "Download CV",
@@ -32,11 +32,11 @@ const translations = {
     "nav.contact": "Contact",
     "about.title": "About Me",
     "about.p1":
-      "I am Adrián Pabón, an electronic engineer from Barranquilla, Colombia, with 3 years of experience in applied AI. I specialize in language models, computer vision, and cloud-based products for real users.",
+      "I am Adrián Pabón, an electronic engineer from Barranquilla, Colombia, with 3 years of experience in applied AI. I specialize in agentic AI, LLM/RAG systems, and legacy-to-cloud migrations on AWS.",
     "about.p2":
       "I work across the full lifecycle, from idea and prototyping to deployment and iteration, collaborating with multidisciplinary teams to deliver robust and scalable solutions.",
     "about.p3":
-      "I have worked across research and industry, from scaling AI assistants for 13,000+ users to deploying computer vision pipelines that reduced manual camera review by 80%.",
+      "I have worked across research and industry, from scaling AI assistants for 13,000+ users to building agentic pipelines that migrate legacy stored procedures to Java microservices.",
     "experience.title": "Experience",
     "experience.role1.title": "Senior Data and AI Engineer · nyxn",
     "experience.role1.point1":
@@ -115,8 +115,8 @@ const translations = {
   },
   es: {
     "meta.description":
-      "Ingeniero Senior de IA y Datos en Colombia que construye GenAI en producción sobre AWS: sistemas de IA agéntica, LLM/RAG, arquitecturas serverless event-driven y microservicios en Java. Abierto a roles Senior de IA/ML e Ingeniería de Datos.",
-    "meta.title": "Adrián Pabón Mendoza | Ingeniero Senior de IA y Datos · GenAI, AWS, IA agéntica",
+      "Ingeniero Senior de IA y Datos en Colombia que construye GenAI en producción sobre AWS: sistemas de IA agéntica, LLM/RAG, arquitecturas serverless event-driven y microservicios en Java. AWS Certified Solutions Architect – Associate.",
+    "meta.title": "Adrián Pabón Mendoza | Ingeniero Senior de IA y Datos · AWS Certified Solutions Architect · IA agéntica",
     "meta.socialDescription":
       "GenAI en producción sobre AWS: sistemas de IA agéntica, LLM/RAG y arquitecturas serverless event-driven con impacto medible.",
     "meta.locale": "es_CO",
@@ -124,9 +124,9 @@ const translations = {
     "intro.tagline": "Construyo sistemas GenAI en producción: arquitecturas agénticas, asistentes LLM/RAG y plataformas de datos serverless en AWS.",
     "intro.experience": "Ingeniero Senior de Datos e IA con 3 años de experiencia llevando IA aplicada de prototipo a producción.",
     "intro.focus": "Mi trabajo conecta modelos de lenguaje, pipelines de datos e infraestructura cloud con impacto medible en negocio.",
-    "intro.availability": "Ingeniero Senior de Datos e IA en nyxn · abierto a roles Senior de IA, ML e Ingeniería de Datos.",
+    "intro.availability": "Ingeniero Senior de Datos e IA en nyxn · AWS Certified Solutions Architect – Associate",
     "intro.metricUsers": "usuarios alcanzados",
-    "intro.metricReview": "menos revisión manual",
+    "intro.metricCalls": "menos tiempo en llamadas rutinarias",
     "intro.metricLatency": "respuestas del asistente",
     "intro.metricDocs": "documentación por migración",
     "intro.cvCta": "Descargar CV",
@@ -144,11 +144,11 @@ const translations = {
     "nav.contact": "Contacto",
     "about.title": "Sobre mí",
     "about.p1":
-      "Soy Adrián Pabón, ingeniero electrónico de Barranquilla, Colombia, con 3 años de experiencia en IA aplicada. Me especializo en modelos de lenguaje, visión por computador y productos en la nube para usuarios reales.",
+      "Soy Adrián Pabón, ingeniero electrónico de Barranquilla, Colombia, con 3 años de experiencia en IA aplicada. Me especializo en IA agéntica, sistemas LLM/RAG y migraciones de sistemas legados a la nube en AWS.",
     "about.p2":
       "Trabajo todo el ciclo de vida, desde la idea y el prototipado hasta el despliegue y la iteración, colaborando con equipos multidisciplinarios para entregar soluciones robustas y escalables.",
     "about.p3":
-      "He trabajado entre investigación e industria, escalando asistentes de IA para más de 13,000 usuarios y desplegando pipelines de visión por computador que redujeron en 80% la revisión manual de cámaras.",
+      "He trabajado entre investigación e industria, escalando asistentes de IA para más de 13,000 usuarios y construyendo pipelines agénticos que migran stored procedures legados a microservicios en Java.",
     "experience.title": "Experiencia",
     "experience.role1.title": "Ingeniero Senior de Datos e IA · nyxn",
     "experience.role1.point1":
