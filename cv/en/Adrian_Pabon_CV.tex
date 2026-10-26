@@ -1,0 +1,168 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% --- Global spacing / layout ---
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% --- Sections ---
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% --- Bullet lists: ONE consistent style ---
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=1pt, leftmargin=*}
+
+% --- Helpers ---
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  \textit{\small #3} \hfill \textit{\small #4} \\
+  \vspace{-2pt}
+}
+
+\newcommand{\resumeProject}[3]{%
+  \par\noindent\textbf{#1} \hfill \textit{\small #2} \par
+  \noindent\small #3 \par
+}
+
+% --- Controlled gaps between blocks ---
+\newcommand{\betweenRoles}{\vspace{4pt}}
+\newcommand{\projectGap}{\vspace{6pt}}
+
+% --- Avoid awkward hyphenation cuts ---
+\usepackage[none]{hyphenat}
+\emergencystretch=1em
+
+\begin{document}
+
+% ===== Header =====
+\begin{center}
+  {\LARGE \textbf{Adrián Pabón Mendoza}} \\[4pt]
+  Barranquilla, Colombia \;|\;
+  \href{mailto:adrianpabonmendoza@gmail.com}{adrianpabonmendoza@gmail.com} \;|\;
+  +57 323 225 7331 \\[2pt]
+  LinkedIn: \href{https://www.linkedin.com/in/adrianpabonmendoza/}{linkedin.com/in/adrianpabonmendoza} \;|\;
+  Portfolio: \href{https://www.adrianpabonmendoza.com/}{adrianpabonmendoza.com}
+\end{center}
+
+% ===== Target Role =====
+\section{Target Role}
+\small
+AI Engineer (Agentic AI, LLM/RAG \& Legacy Migrations) \;|\; \textbf{AWS Certified Solutions Architect -- Associate} \;|\; Electronics Engineer (Cum Laude) \;|\; Python, Java, FastAPI, SQL, Docker, AWS/Azure/OCI
+
+% ===== Summary =====
+\section{Professional Summary}
+\small
+Electronics Engineer and AI Engineer focused on building production GenAI systems: agentic architectures, LLM/RAG assistants, and AI-driven migrations of legacy systems to cloud microservices. AWS Certified Solutions Architect -- Associate with hands-on experience designing serverless, event-driven architectures (Lambda, Step Functions, Bedrock). Scaled NAIA from a 500-user pilot to 13{,}000+ users by integrating OpenAI LLMs, Redis state management, and Microsoft Graph/Azure services. Built an agentic pipeline that migrates stored procedures to Java microservices, cutting migration documentation time from \textbf{2 days to 2 hours}. End-to-end experience: data and evaluation, APIs, deployment, and monitoring.
+
+% ===== Core Skills / Keywords =====
+\section{Skills}
+\small
+\textbf{ML/LLM:} PyTorch, scikit-learn, Hugging Face, fine-tuning, prompt tuning, embeddings, RAG, prompt engineering, evaluation. \\
+\textbf{Agents \& Migrations:} LangChain/LangGraph, multi-agent orchestration, tool-calling, routing, stored procedure to microservice migration, hexagonal architecture. \\
+\textbf{Backend:} Python, Java, FastAPI/Flask, REST APIs, Redis, SQL. \\
+\textbf{MLOps/DevOps \& Cloud:} Git, Docker, AWS (Lambda, Step Functions, Bedrock, SageMaker, DynamoDB, EventBridge, API Gateway, EC2/S3/RDS), Azure, Oracle Cloud, IBM Cloud, Terraform. \\
+
+% ===== Experience =====
+\section{Experience}
+
+\resumeSubheading
+{nyxn}{Remote, Colombia}
+{Senior Data and AI Engineer}{Feb 2026 -- Present}
+\begin{itemize}
+  \resumeItem{Built an agentic architecture that migrates core banking stored procedures to Java 25 microservices with hexagonal architecture: SP and dependency analysis, logic migration, and generation of adapters, models, and utilities.}
+  \resumeItem{Cut technical documentation time for SP migrations (Sonar, Prisma, Veracode, unit tests) from \textbf{2 days to 2 hours}.}
+  \resumeItem{Designing and implementing serverless architectures on AWS (Lambda, Step Functions, Bedrock) for large-scale data processing, integrating foundation models to automate financial workflows.}
+  \resumeItem{Orchestrating secure, scalable Generative AI solutions ensuring compliance with banking regulations via Amazon SageMaker and data governance services.}
+\end{itemize}
+\betweenRoles
+
+\resumeSubheading
+{Optimize IT SAS}{Barranquilla, Colombia}
+{AI Product Specialist / AI Engineer}{Jul 2024 -- Feb 2026}
+\begin{itemize}
+  \resumeItem{Improved theft detection in micro-market systems using Computer Vision, reducing manual camera review time by \textbf{80\%}.}
+  \resumeItem{Trained and evaluated ML models for production use cases (classification/regression), tracking key metrics \textbf{(F1, precision, recall, MAE)} and validating with hold-out sets.}
+  \resumeItem{Delivered an LLM/RAG API with embeddings + vector search, iterating on chunking strategy, prompt templates, and retrieval parameters to improve grounded responses in internal workflows.}
+  \resumeItem{Automated database backup workflows on OCI (scheduling, validation, notifications) with serverless functions, improving reliability, traceability, and reducing manual intervention.}
+\end{itemize}
+\betweenRoles
+
+\resumeSubheading
+{Universidad del Norte}{Barranquilla, Colombia}
+{AI Researcher and Developer}{Jan 2024 -- Nov 2025}
+\begin{itemize}
+  \resumeItem{Reduced administrative response time from hours/days to \textbf{3--5 seconds} by deploying NAIA (13{,}000+ users), enabling self-service for routine queries.}
+  \resumeItem{Designed a modular monolith integrating OpenAI LLMs, Redis state, and external services via Azure; implemented secure access through Microsoft Graph API (email/calendar/authentication).}
+  \resumeItem{Implemented RAG pipelines (chunking, embeddings, retrieval, reranking when applicable) and defined evaluation sets to reduce hallucinations and improve answer relevance.}
+\end{itemize}
+
+% ===== Selected Projects =====
+\section{Featured Projects}
+
+\resumeProject
+{AI Agent Implementation for Medical Call Center}{2026}
+{Intelligent voice agents to improve customer care experience at a clinical laboratory.}
+\begin{itemize}
+  \resumeItem{Executed outbound campaigns for a medical call center.}
+  \resumeItem{Implemented \textbf{Tool-Calling} logic for real-time appointment and lab result validation, connecting the agent directly to the medical center's databases.}
+  \resumeItem{Impact: \textbf{50\%} reduction in call center agents' time spent on routine calls, freeing them for higher-impact interactions.}
+\end{itemize}
+\projectGap
+
+\resumeProject
+{NAIA --- Nimble Artificial Intelligence Assistant}{2024--2025}
+{\href{https://www.adrianpabonmendoza.com/}{Portfolio link} \;|\; Multi-role assistant with LLM/RAG and integrations.}
+\begin{itemize}
+  \resumeItem{Architecture: OpenAI LLMs + Redis + Azure services + Microsoft Graph API integration.}
+  \resumeItem{Scale: 13{,}000+ users; definition of operational flows and monitoring for production use.}
+  \resumeItem{Impact: conversational responses in \textbf{3--5 seconds} (web architecture baseline).}
+\end{itemize}
+\projectGap
+
+\resumeProject
+{Theft Detection (Computer Vision)}{2024}
+{Production CV pipeline for micro-market security.}
+\begin{itemize}
+  \resumeItem{Data: dataset curation and labeling; model training/validation with CV metrics \textbf{(mAP/F1)} and hold-out evaluation.}
+  \resumeItem{Impact: \textbf{80\%} reduction in manual camera review time.}
+\end{itemize}
+
+% ===== Publications =====
+\section{Publications \& Research}
+\begin{itemize}
+  \resumeItem{\textbf{NAIA: A Robust AI Framework for Academic Assistance} --- \textit{Systems} (2025).}
+  \resumeItem{\textbf{Architectures for AI-Powered Virtual Assistants} --- \textit{IEEE TEMSCON LATAM} (2025).}
+  \resumeItem{\textbf{NAIA: A Multi-Technology Virtual Assistant} --- \textit{IEEE Access} (2025).}
+  \resumeItem{\textbf{Itinerary Assignment Optimization} --- \textit{IEEE COLCOM} (2024).}
+\end{itemize}
+
+% ===== Education =====
+\section{Education}
+\resumeSubheading
+{Universidad del Norte}{Barranquilla, Colombia}
+{B.Eng. in Electronics Engineering (Cum Laude)}{2020 -- 2025}
+
+% ===== Certificates =====
+\section{Certifications \& Recognition}
+\begin{itemize}
+  \resumeItem{\textbf{AWS Certified Solutions Architect -- Associate} --- Amazon Web Services (Oct 2026 -- Oct 2029) \;|\; \href{https://www.credly.com/badges/c1b996bf-6ad3-4f0d-b936-1088787ad5c1/public_url}{Verify on Credly}}
+  \resumeItem{\textbf{Databricks Fundamentals} (2025) \;|\; \textbf{NVIDIA: Applications of AI for Anomaly Detection} (2025) \;|\; \textbf{NVIDIA: Generative AI with Diffusion Models} (2025)}
+  \resumeItem{\textbf{Speaker:} Cátedra Europa 2024 (``Computer Vision: A World of Possibilities''). \;|\; \textbf{Recognition:} Best Science Project (Colciencias, 2019).}
+\end{itemize}
+
+% ===== Languages =====
+\section{Languages}
+\small Spanish (Native) \;|\; English (Professional / C1)
+
+\end{document}
