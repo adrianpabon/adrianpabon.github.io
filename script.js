@@ -22,6 +22,7 @@ const translations = {
     "nav.home": "Home",
     "nav.about": "About Me",
     "nav.experience": "Experience",
+    "nav.certifications": "Certifications",
     "nav.projects": "Projects",
     "nav.research": "Research",
     "nav.notes": "Notes",
@@ -47,6 +48,12 @@ const translations = {
     "experience.role3.desc":
       "Built and scaled NAIA to 13,000+ users. Integrated OpenAI LLMs, Redis state management, Azure services, and Microsoft Graph APIs to provide secure assistant capabilities in 3-5 seconds.",
     "experience.role3.meta": "Barranquilla, Colombia · Jan 2024 - Nov 2025",
+    "certifications.title": "Certifications",
+    "certifications.awsSaa.badgeAlt": "AWS Certified Solutions Architect – Associate badge",
+    "certifications.awsSaa.description":
+      "Validates the ability to design secure, resilient, high-performing, and cost-optimized distributed systems on AWS following well-architected principles.",
+    "certifications.awsSaa.meta": "Amazon Web Services · Issued Oct 2026 · Expires Oct 2029",
+    "certifications.verify": "Verify credential",
     "projects.title": "Projects",
     "projects.naia.image1Alt": "NAIA assistant interface mock",
     "projects.naia.image2Alt": "Dashboard analytics for NAIA usage",
@@ -120,6 +127,7 @@ const translations = {
     "nav.home": "Inicio",
     "nav.about": "Sobre mí",
     "nav.experience": "Experiencia",
+    "nav.certifications": "Certificaciones",
     "nav.projects": "Proyectos",
     "nav.research": "Investigación",
     "nav.notes": "Notas",
@@ -145,6 +153,12 @@ const translations = {
     "experience.role3.desc":
       "Construí y escalé NAIA para más de 13,000 usuarios. Integré LLMs de OpenAI, estado con Redis, servicios de Azure y Microsoft Graph para ofrecer capacidades seguras en 3-5 segundos.",
     "experience.role3.meta": "Barranquilla, Colombia · Ene 2024 - Nov 2025",
+    "certifications.title": "Certificaciones",
+    "certifications.awsSaa.badgeAlt": "Insignia AWS Certified Solutions Architect – Associate",
+    "certifications.awsSaa.description":
+      "Valida la capacidad de diseñar sistemas distribuidos seguros, resilientes, de alto rendimiento y optimizados en costos en AWS siguiendo principios well-architected.",
+    "certifications.awsSaa.meta": "Amazon Web Services · Emitida Oct 2026 · Vence Oct 2029",
+    "certifications.verify": "Verificar credencial",
     "projects.title": "Proyectos",
     "projects.naia.image1Alt": "Interfaz del asistente NAIA",
     "projects.naia.image2Alt": "Panel de analítica de uso de NAIA",

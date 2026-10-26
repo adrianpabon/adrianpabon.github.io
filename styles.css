@@ -491,6 +491,29 @@ p {
   gap: 0.5rem;
 }
 
+.cert-card {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.1rem;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem;
+}
+
+.cert-card__badge {
+  width: 96px;
+  height: auto;
+  display: block;
+}
+
+.cert-card__content {
+  display: grid;
+  gap: 0.25rem;
+}
+
 .contact-card {
   margin-top: 0.75rem;
   background: var(--card);
@@ -591,6 +614,12 @@ p {
   .contact__row {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+
+  .cert-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
   }
 }
 

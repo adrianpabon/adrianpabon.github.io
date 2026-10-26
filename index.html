@@ -130,6 +130,7 @@
             <a href="#home" data-i18n="nav.home">Home</a>
             <a href="#about" data-i18n="nav.about">About Me</a>
             <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
             <a href="#projects" data-i18n="nav.projects">Projects</a>
             <a href="#research" data-i18n="nav.research">Research</a>
             <a href="#notes" data-i18n="nav.notes">Notes</a>
@@ -184,6 +185,42 @@
             <p class="list__meta" data-i18n="experience.role3.meta">Barranquilla, Colombia · Jan 2024 - Nov 2025</p>
           </li>
         </ul>
+      </section>
+
+      <section id="certifications" class="section">
+        <h2 data-i18n="certifications.title">Certifications</h2>
+        <article class="cert-card">
+          <img
+            class="cert-card__badge"
+            src="data/certifications/aws-solutions-architect-associate.png"
+            alt="AWS Certified Solutions Architect – Associate badge"
+            data-i18n-alt="certifications.awsSaa.badgeAlt"
+            width="150"
+            height="170"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="cert-card__content">
+            <p class="list__title">AWS Certified Solutions Architect – Associate</p>
+            <p class="list__desc" data-i18n="certifications.awsSaa.description">
+              Validates the ability to design secure, resilient, high-performing, and cost-optimized distributed
+              systems on AWS following well-architected principles.
+            </p>
+            <p class="list__meta" data-i18n="certifications.awsSaa.meta">
+              Amazon Web Services · Issued Oct 2026 · Expires Oct 2029
+            </p>
+            <p class="list__meta">
+              <a
+                class="link"
+                href="https://www.credly.com/badges/c1b996bf-6ad3-4f0d-b936-1088787ad5c1/public_url"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span data-i18n="certifications.verify">Verify credential</span>
+              </a>
+            </p>
+          </div>
+        </article>
       </section>
 
       <section id="projects" class="section">
@@ -585,6 +622,18 @@
         "jobTitle": "Senior Data and AI Engineer",
         "url": "https://www.adrianpabonmendoza.com/",
         "image": "https://www.adrianpabonmendoza.com/data/profile.jpeg",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified Solutions Architect – Associate",
+          "credentialCategory": "certification",
+          "dateCreated": "2026-10-26",
+          "expires": "2029-10-26",
+          "url": "https://www.credly.com/badges/c1b996bf-6ad3-4f0d-b936-1088787ad5c1/public_url",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services"
+          }
+        },
         "sameAs": [
           "https://www.linkedin.com/in/adrianpabonmendoza/",
           "https://github.com/adrianpabon",
