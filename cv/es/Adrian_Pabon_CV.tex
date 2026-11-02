@@ -58,20 +58,23 @@
 % ===== Perfil objetivo =====
 \section{Perfil objetivo}
 \small
-Ingeniero de IA (IA Agéntica, LLM/RAG \& Migraciones de Sistemas Legados) \;|\; \textbf{AWS Certified Solutions Architect -- Associate} \;|\; Ingeniero Electrónico (Cum Laude) \;|\; Python, Java, FastAPI, SQL, Docker, AWS/Azure/OCI
+Ingeniero Senior de IA (LLMs, RAG \& Agentes de IA) \;|\; \textbf{AWS Certified Solutions Architect -- Associate} \;|\; Ingeniero Electrónico (Cum Laude) \;|\; Python, Java, FastAPI, Docker, Kubernetes, Terraform, AWS/Azure/OCI
 
 % ===== Resumen =====
 \section{Resumen profesional}
 \small
-Ingeniero Electrónico e Ingeniero de IA enfocado en construir sistemas GenAI en producción: arquitecturas agénticas, asistentes LLM/RAG y migraciones de sistemas legados a microservicios en la nube impulsadas por IA. Certificado como AWS Solutions Architect -- Associate, con experiencia práctica diseñando arquitecturas serverless y event-driven (Lambda, Step Functions, Bedrock). Escalé NAIA de un piloto de 500 usuarios a más de 13{,}000 usuarios integrando LLMs de OpenAI, manejo de estado con Redis y servicios de Microsoft Graph/Azure. Construí un pipeline agéntico que migra stored procedures a microservicios en Java, reduciendo la documentación de cada migración de \textbf{2 días a 2 horas}. Experiencia de punta a punta: datos y evaluación, APIs, despliegue y monitoreo.
+Ingeniero Senior de Datos e IA llevando sistemas LLM, RAG y agénticos a producción desde 2024. Certificado AWS Solutions Architect -- Associate. Construyo arquitecturas agénticas y pipelines RAG sobre bases vectoriales (pgvector, Pinecone, OpenSearch), y evalúo aplicaciones LLM con datasets propios y LLM-as-a-judge. Escalé NAIA de un piloto de 500 usuarios a más de 13{,}000 usuarios con LLMs de OpenAI, Redis y Microsoft Graph/Azure. Construí un pipeline agéntico que migra stored procedures a microservicios en Java, reduciendo la documentación de cada migración de \textbf{2 días a 2 horas}. Despliego en AWS con arquitecturas serverless y event-driven, Docker, Kubernetes y Terraform.
 
 % ===== Habilidades =====
 \section{Habilidades}
 \small
-\textbf{ML/LLM:} PyTorch, scikit-learn, Hugging Face, fine-tuning, prompt tuning, embeddings, RAG, prompt engineering, evaluación. \\
-\textbf{Agentes y migraciones:} LangChain/LangGraph, orquestación multi-agente, tool-calling, enrutamiento, migración de stored procedures a microservicios, arquitectura hexagonal. \\
-\textbf{Backend:} Python, Java, FastAPI/Flask, APIs REST, Redis, SQL. \\
-\textbf{MLOps/DevOps \& Cloud:} Git, Docker, AWS (Lambda, Step Functions, Bedrock, SageMaker, DynamoDB, EventBridge, API Gateway, EC2/S3/RDS), Azure, Oracle Cloud, IBM Cloud, Terraform. \\
+\textbf{LLMs y agentes:} OpenAI, Amazon Bedrock, LangChain, LangGraph, Hugging Face Transformers, orquestación multi-agente, tool-calling, enrutamiento, prompt engineering. \\
+\textbf{RAG y búsqueda vectorial:} embeddings, chunking, recuperación, reranking; pgvector, Pinecone, ChromaDB, FAISS, OpenSearch, Bedrock Knowledge Bases. \\
+\textbf{Evaluación de LLMs:} datasets de evaluación propios, LLM-as-a-judge, métricas de alucinación y relevancia de respuestas, iteración de prompts. \\
+\textbf{Backend y migraciones:} Python, Java, FastAPI/Flask, APIs REST, Redis, SQL, arquitectura hexagonal, migración de stored procedures a microservicios. \\
+\textbf{Datos:} pipelines de datos, modelado de datos en DynamoDB, PostgreSQL, MongoDB, Databricks. \\
+\textbf{Cloud y DevOps:} AWS (Lambda, Step Functions, Bedrock, SageMaker, DynamoDB, EventBridge, API Gateway, Cognito, EC2/S3/RDS), Terraform (IaC), Docker, Kubernetes (escalado de pods y configuración de despliegues), Git, Azure, Oracle Cloud, IBM Cloud. \\
+\textbf{ML:} PyTorch, scikit-learn, fine-tuning. \\
 
 % ===== Experiencia =====
 \section{Experiencia}
@@ -82,8 +85,8 @@ Ingeniero Electrónico e Ingeniero de IA enfocado en construir sistemas GenAI en
 \begin{itemize}
   \resumeItem{Construí una arquitectura agéntica que migra stored procedures core de banca a microservicios en Java 25 con arquitectura hexagonal: análisis del SP y sus dependencias, migración de la lógica y generación de adapters, modelos y utilidades.}
   \resumeItem{Reduje el tiempo de documentación técnica de las migraciones de SP (Sonar, Prisma, Veracode, pruebas unitarias) de \textbf{2 días a 2 horas}.}
-  \resumeItem{Diseño e implemento arquitecturas serverless en AWS (Lambda, Step Functions, Bedrock) para procesamiento de datos a gran escala, integrando foundation models para automatizar flujos financieros.}
-  \resumeItem{Orquesto soluciones de IA Generativa seguras y escalables que cumplen la regulación bancaria, usando Amazon SageMaker y servicios de gobierno de datos.}
+  \resumeItem{Diseñé y orquesté un producto serverless y event-driven en AWS para hacer seguimiento de los roles abiertos en la compañía (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES), con infraestructura como código en \textbf{Terraform}.}
+  \resumeItem{Construí los pipelines de datos del producto y diseñé su modelo de datos en DynamoDB.}
 \end{itemize}
 \betweenRoles
 
@@ -91,9 +94,9 @@ Ingeniero Electrónico e Ingeniero de IA enfocado en construir sistemas GenAI en
 {Optimize IT SAS}{Barranquilla, Colombia}
 {Especialista de Producto IA / Ingeniero de IA}{Jul 2024 -- Feb 2026}
 \begin{itemize}
+  \resumeItem{Entregué una API LLM/RAG con embeddings + búsqueda vectorial, iterando la estrategia de chunking, las plantillas de prompt y los parámetros de recuperación para mejorar respuestas fundamentadas en flujos internos.}
   \resumeItem{Mejoré la detección de robos en micro-mercados con Visión por Computador, reduciendo en \textbf{80\%} el tiempo de revisión manual de cámaras.}
   \resumeItem{Entrené y evalué modelos de ML para casos de uso en producción (clasificación/regresión), monitoreando métricas clave \textbf{(F1, precision, recall, MAE)} y validando con conjuntos hold-out.}
-  \resumeItem{Entregué una API LLM/RAG con embeddings + búsqueda vectorial, iterando la estrategia de chunking, las plantillas de prompt y los parámetros de recuperación para mejorar respuestas fundamentadas en flujos internos.}
   \resumeItem{Automaticé flujos de respaldo de bases de datos en OCI (programación, validación, notificaciones) con funciones serverless, mejorando confiabilidad y trazabilidad y reduciendo la intervención manual.}
 \end{itemize}
 \betweenRoles
