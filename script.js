@@ -40,11 +40,13 @@ const translations = {
     "experience.title": "Experience",
     "experience.role1.title": "Senior Data and AI Engineer · nyxn",
     "experience.role1.point1":
-      "Designed and orchestrated a serverless, event-driven AWS product to track open roles across the company (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES).",
+      "Designed and orchestrated a serverless, event-driven AWS product to track open roles across the company (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES), with infrastructure as code in Terraform.",
     "experience.role1.point2":
       "Built an agentic architecture that migrates stored procedures to Java 25 microservices with hexagonal architecture: SP and dependency analysis, logic migration, and construction of adapters, models, and utilities.",
     "experience.role1.point3":
       "Cut technical documentation time for SP migrations (Sonar, Prisma, Veracode, unit tests) from 2 days to 2 hours.",
+    "experience.role1.point4":
+      "Built the product's data pipelines and designed its DynamoDB data model.",
     "experience.role1.meta": "Remote, Colombia · Feb 2026 - Present",
     "experience.role2.title": "AI Product Specialist / AI Engineer · Optimize IT SAS",
     "experience.role2.point1":
@@ -152,11 +154,13 @@ const translations = {
     "experience.title": "Experiencia",
     "experience.role1.title": "Ingeniero Senior de Datos e IA · nyxn",
     "experience.role1.point1":
-      "Diseñé y orquesté un producto serverless y event-driven en AWS para hacer seguimiento de los roles abiertos en la compañía (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES).",
+      "Diseñé y orquesté un producto serverless y event-driven en AWS para hacer seguimiento de los roles abiertos en la compañía (Lambda, DynamoDB, EventBridge, S3, Bedrock, API Gateway, Cognito, SES), con infraestructura como código en Terraform.",
     "experience.role1.point2":
       "Construí una arquitectura agéntica que migra stored procedures a microservicios en Java 25 con arquitectura hexagonal: análisis del SP y sus dependencias, migración de la lógica y construcción de adapters, modelos y utilidades.",
     "experience.role1.point3":
       "Reduje el tiempo de documentación técnica de las migraciones de SP (Sonar, Prisma, Veracode, pruebas unitarias) de 2 días a 2 horas.",
+    "experience.role1.point4":
+      "Construí los pipelines de datos del producto y diseñé su modelo de datos en DynamoDB.",
     "experience.role1.meta": "Remoto, Colombia · Feb 2026 - Actualidad",
     "experience.role2.title": "Especialista de Producto IA / Ingeniero IA · Optimize IT SAS",
     "experience.role2.point1":
