@@ -26,6 +26,7 @@ const translations = {
     "nav.about": "About Me",
     "nav.experience": "Experience",
     "nav.certifications": "Certifications",
+    "nav.education": "Education",
     "nav.projects": "Projects",
     "nav.research": "Research",
     "nav.interests": "Interests & Skills",
@@ -68,6 +69,11 @@ const translations = {
       "Validates the ability to design secure, resilient, high-performing, and cost-optimized distributed systems on AWS following well-architected principles.",
     "certifications.awsSaa.meta": "Amazon Web Services · Issued Oct 2026 · Expires Oct 2029",
     "certifications.verify": "Verify credential",
+    "education.title": "Education & Languages",
+    "education.degree": "B.Eng. in Electronics Engineering (Cum Laude)",
+    "education.meta": "Barranquilla, Colombia · 2020 - 2025",
+    "languages.title": "Languages",
+    "languages.list": "Spanish (native) · English (professional, C1)",
     "projects.title": "Projects",
     "projects.naia.image1Alt": "NAIA assistant interface mock",
     "projects.naia.image2Alt": "Dashboard analytics for NAIA usage",
@@ -113,6 +119,7 @@ const translations = {
     "contact.copy": "Copy",
     "contact.copied": "Copied",
     "contact.download": "Download",
+    "contact.cvOther": "Spanish version",
     "footer.updatedLabel": "Last updated:",
   },
   es: {
@@ -140,6 +147,7 @@ const translations = {
     "nav.about": "Sobre mí",
     "nav.experience": "Experiencia",
     "nav.certifications": "Certificaciones",
+    "nav.education": "Educación",
     "nav.projects": "Proyectos",
     "nav.research": "Investigación",
     "nav.interests": "Intereses y habilidades",
@@ -182,6 +190,11 @@ const translations = {
       "Valida la capacidad de diseñar sistemas distribuidos seguros, resilientes, de alto rendimiento y optimizados en costos en AWS siguiendo principios well-architected.",
     "certifications.awsSaa.meta": "Amazon Web Services · Emitida Oct 2026 · Vence Oct 2029",
     "certifications.verify": "Verificar credencial",
+    "education.title": "Educación e idiomas",
+    "education.degree": "Ingeniería Electrónica (Cum Laude)",
+    "education.meta": "Barranquilla, Colombia · 2020 - 2025",
+    "languages.title": "Idiomas",
+    "languages.list": "Español (nativo) · Inglés (profesional, C1)",
     "projects.title": "Proyectos",
     "projects.naia.image1Alt": "Interfaz del asistente NAIA",
     "projects.naia.image2Alt": "Panel de analítica de uso de NAIA",
@@ -227,6 +240,7 @@ const translations = {
     "contact.copy": "Copiar",
     "contact.copied": "Copiado",
     "contact.download": "Descargar",
+    "contact.cvOther": "Versión en inglés",
     "footer.updatedLabel": "Última actualización:",
   },
 };
@@ -258,9 +272,12 @@ function updateLastUpdated() {
   const lastUpdated = document.querySelector("[data-last-updated]");
   if (!lastUpdated) return;
 
+  // The date is stamped into the HTML by tools/build-es.mjs; only reformat it here.
+  const date = new Date(`${lastUpdated.getAttribute("datetime")}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return;
+
   const locale = currentLanguage === "es" ? "es-CO" : "en-US";
-  const now = new Date();
-  const formatted = now.toLocaleDateString(locale, {
+  const formatted = date.toLocaleDateString(locale, {
     month: "long",
     year: "numeric",
   });

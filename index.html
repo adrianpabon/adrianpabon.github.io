@@ -43,7 +43,7 @@
 
     <link rel="icon" href="data/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css?v=7de985e2a5" />
-    <script defer src="script.js?v=151ca3e2e9"></script>
+    <script defer src="script.js?v=04bf2a53e8"></script>
   </head>
   <body>
     <main class="layout" id="content">
@@ -153,6 +153,7 @@
             <a href="#about" data-i18n="nav.about">About Me</a>
             <a href="#experience" data-i18n="nav.experience">Experience</a>
             <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+            <a href="#education" data-i18n="nav.education">Education</a>
             <a href="#projects" data-i18n="nav.projects">Projects</a>
             <a href="#research" data-i18n="nav.research">Research</a>
             <a href="#interests" data-i18n="nav.interests">Interests & Skills</a>
@@ -244,6 +245,21 @@
             </p>
           </div>
         </article>
+      </section>
+
+      <section id="education" class="section">
+        <h2 data-i18n="education.title">Education & Languages</h2>
+        <ul class="list">
+          <li>
+            <p class="list__title" data-i18n="education.degree">B.Eng. in Electronics Engineering (Cum Laude)</p>
+            <p class="list__desc">Universidad del Norte</p>
+            <p class="list__meta" data-i18n="education.meta">Barranquilla, Colombia · 2020 - 2025</p>
+          </li>
+          <li>
+            <p class="list__title" data-i18n="languages.title">Languages</p>
+            <p class="list__desc" data-i18n="languages.list">Spanish (native) · English (professional, C1)</p>
+          </li>
+        </ul>
       </section>
 
       <section id="projects" class="section">
@@ -523,13 +539,15 @@
           </div>
           <div class="contact__row">
             <span class="contact__label" data-i18n="contact.cv">CV</span>
-            <a
-              class="contact__value link"
-              href="cv/en/Adrian_Pabon_CV.pdf"
-              download
-            >
-              <span data-i18n="contact.download">Download</span>
-            </a>
+            <span class="contact__value">
+              <a class="link" href="cv/en/Adrian_Pabon_CV.pdf" download>
+                <span data-i18n="contact.download">Download</span>
+              </a>
+              ·
+              <a class="link" href="cv/es/Adrian_Pabon_CV.pdf" download>
+                <span data-i18n="contact.cvOther">Spanish version</span>
+              </a>
+            </span>
           </div>
         </div>
       </section>
@@ -537,7 +555,7 @@
 
     <footer class="footer">
       <p>© Adrián Pabón Mendoza</p>
-      <p class="footer__updated"><span data-i18n="footer.updatedLabel">Last updated:</span> <span data-last-updated></span></p>
+      <p class="footer__updated"><span data-i18n="footer.updatedLabel">Last updated:</span> <time data-last-updated datetime="2026-11-01">November 2026</time></p>
     </footer>
 
     <script type="application/ld+json">
@@ -561,6 +579,7 @@
           "addressCountry": "CO"
         },
         "knowsLanguage": ["es", "en"],
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad del Norte" },
         "knowsAbout": [
           "Generative AI",
           "Agentic AI",
