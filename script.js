@@ -118,8 +118,8 @@ const translations = {
     "contact.cv": "CV",
     "contact.copy": "Copy",
     "contact.copied": "Copied",
-    "contact.download": "Download",
-    "contact.cvOther": "Spanish version",
+    "contact.download": "English (PDF)",
+    "contact.cvOther": "Spanish (PDF)",
     "footer.updatedLabel": "Last updated:",
   },
   es: {
@@ -239,8 +239,8 @@ const translations = {
     "contact.cv": "CV",
     "contact.copy": "Copiar",
     "contact.copied": "Copiado",
-    "contact.download": "Descargar",
-    "contact.cvOther": "Versión en inglés",
+    "contact.download": "Español (PDF)",
+    "contact.cvOther": "Inglés (PDF)",
     "footer.updatedLabel": "Última actualización:",
   },
 };
@@ -462,3 +462,97 @@ initNavToggle();
 initLanguageToggle();
 initCopyEmail();
 initSliders();
+
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Fade sections in as they scroll into view.
+function initReveal() {
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
+  const targets = document.querySelectorAll(".section");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+  );
+  targets.forEach((target) => {
+    target.classList.add("reveal");
+    target
+      .querySelectorAll(".list > li, .pill-list > li, .project-card, .cert-card, .contact-card")
+      .forEach((item, i) => {
+        item.classList.add("stagger");
+        // Cap the delay so long lists don't keep the last items waiting.
+        item.style.setProperty("--stagger-index", String(Math.min(i, 12)));
+      });
+    observer.observe(target);
+  });
+  document.documentElement.classList.add("has-reveal");
+}
+
+// Count the numeric hero metrics up from zero, keeping their original text format.
+function initCountUp() {
+  if (prefersReducedMotion) return;
+  document.querySelectorAll(".impact-strip dt").forEach((el) => {
+    const text = el.textContent.trim();
+    // Only plain counts like "13,000+" or "50%"; ranges such as "3-5s" stay static.
+    const match = text.match(/^([\d,]+)([+%]?)$/);
+    if (!match) return;
+    const target = Number(match[1].replace(/,/g, ""));
+    const suffix = match[2];
+    const duration = 1400;
+    let start;
+    el.setAttribute("aria-label", text);
+    const step = (now) => {
+      start ??= now;
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - (1 - progress) ** 3;
+      el.textContent = `${Math.round(target * eased).toLocaleString("en-US")}${suffix}`;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  });
+}
+
+// Subtle 3D tilt that follows the pointer on featured cards (mouse/pen only).
+function initTilt() {
+  if (prefersReducedMotion || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  const maxTilt = 4;
+  document.querySelectorAll(".project-card, .cert-card").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      card.style.setProperty("--tilt-x", `${(-y * maxTilt).toFixed(2)}deg`);
+      card.style.setProperty("--tilt-y", `${(x * maxTilt).toFixed(2)}deg`);
+    });
+    card.addEventListener("pointerleave", () => {
+      card.style.removeProperty("--tilt-x");
+      card.style.removeProperty("--tilt-y");
+    });
+  });
+}
+
+// Move a soft spotlight with the pointer inside cards.
+function initSpotlight() {
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  document.querySelectorAll(".list > li, .project-card, .cert-card, .contact-card").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
+      card.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
+    });
+    card.addEventListener("pointerleave", () => {
+      card.style.removeProperty("--spot-x");
+      card.style.removeProperty("--spot-y");
+    });
+  });
+}
+
+initReveal();
+initSpotlight();
+initCountUp();
+initTilt();

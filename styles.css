@@ -628,3 +628,243 @@ p {
     align-items: center;
   }
 }
+
+/* ---------- Motion & micro-interactions ----------
+   Everything animated lives behind prefers-reduced-motion: no-preference,
+   so visitors who ask for less motion get the static design. */
+
+@property --ring-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Soft aurora glow behind the hero content. */
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  z-index: -1;
+  background:
+    radial-gradient(closest-side at 30% 30%, rgba(37, 99, 235, 0.16), transparent),
+    radial-gradient(closest-side at 70% 60%, rgba(14, 165, 233, 0.14), transparent),
+    radial-gradient(closest-side at 45% 80%, rgba(124, 58, 237, 0.1), transparent);
+  pointer-events: none;
+}
+
+.intro__name {
+  background: linear-gradient(100deg, #111827 0%, #111827 38%, #2563eb 45%, #0ea5e9 50%, #2563eb 55%, #111827 62%, #111827 100%);
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Photo framed by a gradient ring. */
+.intro__photo {
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    conic-gradient(from var(--ring-angle), #2563eb, #0ea5e9, #7c3aed, #2563eb) border-box;
+}
+
+.impact-strip div,
+.list > li,
+.project-card,
+.cert-card,
+.contact-card,
+.pill-list li {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.impact-strip div:hover,
+.list > li:hover,
+.project-card:hover,
+.cert-card:hover,
+.contact-card:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+.pill-list li:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+  color: var(--text);
+}
+
+.impact-strip dt {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Light sweep across the main CV button. */
+.button--cv {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button--cv::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro::before {
+    animation: aurora 18s ease-in-out infinite alternate;
+  }
+
+  .intro__name {
+    animation: name-shimmer 6s ease-in-out 0.4s infinite;
+  }
+
+  .intro__photo {
+    animation: ring-spin 8s linear infinite;
+  }
+
+  .button--cv::after {
+    animation: button-sweep 4s ease-in-out 1.5s infinite;
+  }
+
+  .impact-strip div:hover,
+  .list > li:hover,
+  .contact-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .pill-list li:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Cards with a 3D tilt follow the pointer (set by script.js). */
+  .project-card,
+  .cert-card {
+    transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  }
+
+  .cert-card__badge {
+    transition: transform 0.3s ease;
+  }
+
+  .cert-card:hover .cert-card__badge {
+    transform: scale(1.06) rotate(-3deg);
+  }
+
+  /* Scroll reveal: only applied once script.js marks the page, so no-JS visitors see everything. */
+  .has-reveal .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .has-reveal .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(6%, -4%) rotate(8deg);
+  }
+  100% {
+    transform: translate(-5%, 5%) rotate(-6deg);
+  }
+}
+
+@keyframes name-shimmer {
+  0%,
+  60% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes ring-spin {
+  to {
+    --ring-angle: 360deg;
+  }
+}
+
+@keyframes button-sweep {
+  0%,
+  60% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+/* ---------- Section-level effects ---------- */
+
+/* Gradient accent bar under every section title. */
+.section h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 0.35rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9, #7c3aed);
+  transform-origin: left;
+}
+
+/* Spotlight that follows the pointer inside cards (position set by script.js). */
+.list > li,
+.project-card,
+.cert-card,
+.contact-card {
+  background:
+    radial-gradient(420px circle at var(--spot-x, -999px) var(--spot-y, -999px), rgba(37, 99, 235, 0.09), transparent 45%),
+    var(--card);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .has-reveal .reveal h2::after {
+    transform: scaleX(0);
+    transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.25s;
+  }
+
+  .has-reveal .reveal.is-visible h2::after {
+    transform: scaleX(1);
+  }
+
+  /* Cards, list items and skill chips enter one after another. */
+  .has-reveal .reveal:not(.is-visible) .stagger {
+    opacity: 0;
+  }
+
+  .has-reveal .reveal.is-visible .stagger {
+    animation: rise-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+    animation-delay: calc(var(--stagger-index, 0) * 70ms + 150ms);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
